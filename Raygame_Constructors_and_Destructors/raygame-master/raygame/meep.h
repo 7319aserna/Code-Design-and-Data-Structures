@@ -10,8 +10,6 @@ public:
 	bool enabled = true;
 	Texture2D texture;
 
-	DrawTriangle
-
 	// Constructors & Destructors
 	meep();					// This is the constructor declaration
 	meep(bool _enabled);
@@ -19,6 +17,4 @@ public:
 
 	// Misc Functions
 	void refresh();
-
-private:
 };
