@@ -13,9 +13,6 @@ int main()
 	InitWindow(screenWidth, screenHeight, "Constructors and Destructors");
 
 	meep meep;
-	meep.leftPoint = { 375.0f, 225.0f };
-	meep.rightPoint = { 425.0f, 225.0f };
-	meep.topPoint = { 400.0f, 200.0f };
 
 	SetTargetFPS(60);
 	//--------------------------------------------------------------------------------------

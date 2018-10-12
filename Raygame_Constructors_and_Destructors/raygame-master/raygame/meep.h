@@ -9,6 +9,7 @@ public:
 	//Vars
 	bool enabled = true;
 	Texture2D texture;
+	Wave customSound;
 
 	// Constructors & Destructors
 	meep();					// This is the constructor declaration

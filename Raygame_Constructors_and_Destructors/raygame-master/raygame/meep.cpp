@@ -8,12 +8,13 @@ meep::meep()
 {
 	std::cout << "The object is being created!" << std::endl;
 	texture = LoadTexture("keeb.png");
+	enabled = false;
 }
 
 meep::meep(bool _enabled)
 {
-	if (texture) {
-
+	if (enabled == false) {
+		LoadSound("Alexis's song");
 	}
 }
 
