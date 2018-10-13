@@ -10,5 +10,7 @@ public:
 	~tile();
 
 	Color tint;
+	int positionX;
+	int positionY;
 	Texture2D texture;
 };
