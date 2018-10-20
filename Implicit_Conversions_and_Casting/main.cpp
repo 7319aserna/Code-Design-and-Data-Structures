@@ -1,5 +1,4 @@
 #include <iostream>
-
 #include "raylib/raylib.h"
 
 //#include "originalClass.h"
@@ -55,26 +54,18 @@ int main() {
 	wizardObject.name = "Steve The Wizard";
 	wizardObject.health = 100;
 	wizardObject.position = { 100, 100 };
+	wizardObject.rotation = 0.0f;
 	wizardObject.speed = 50;
 
 	while (!WindowShouldClose()) {
 
 		wizardObject.update(GetFrameTime());
 
-		if (IsKeyPressed(KEY_SPACE)) {
-			wizardObject.health -= 10;
-
-			if (wizardObject.health == 0) {
-				wizardObject.isWizardAlive = false;
-				UnloadTexture(wizardObject.texture);
-			}
-		}
-
 		BeginDrawing();
 
-		wizardObject.draw();
-
 		ClearBackground(RAYWHITE);
+
+		wizardObject.draw();
 
 		EndDrawing();
 	}

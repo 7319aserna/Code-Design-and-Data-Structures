@@ -1,0 +1,9 @@
+﻿  main.cpp
+  player.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\raylib_practice\player.cpp(14): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\raylib_practice\player.cpp(20): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\raylib_practice\player.cpp(23): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\raylib_practice\player.cpp(26): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\raylib_practice\player.cpp(29): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+  Generating Code...
+  Raylib_Practice.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\Debug\Raylib_Practice.exe

@@ -1,0 +1,10 @@
+﻿  main.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\templates\main.cpp(18): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  c:\users\s189074\source\repos\code-design-and-data-structures\templates\main.cpp(53): note: see reference to function template instantiation 't1 sub<float,double,int>(t2,t3)' being compiled
+          with
+          [
+              t1=float,
+              t2=double,
+              t3=int
+          ]
+  Templates.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\Debug\Templates.exe

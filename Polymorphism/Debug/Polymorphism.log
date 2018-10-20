@@ -1,0 +1,6 @@
+﻿  main.cpp
+  player.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\polymorphism\player.cpp(27): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  wizard.cpp
+  Generating Code...
+  Polymorphism.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\Debug\Polymorphism.exe

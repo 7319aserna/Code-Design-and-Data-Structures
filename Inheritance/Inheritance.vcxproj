@@ -120,11 +120,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="button.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="sprite.cpp" />
     <ClCompile Include="vector_2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="button.h" />
     <ClInclude Include="sprite.h" />
     <ClInclude Include="vector_2.h" />
   </ItemGroup>

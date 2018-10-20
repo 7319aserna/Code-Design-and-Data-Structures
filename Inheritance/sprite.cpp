@@ -10,6 +10,8 @@ sprite::sprite(const std::string * filename, const int cellCount, const float _f
 {
 	spriteCells = new Texture2D[cellCount];
 
+	frameCount = cellCount;
+
 	// For the cell count, as it increases by one, it would switch textures.
 	for (int i = 0; i < cellCount; i++) {
 		spriteCells[i] = LoadTexture(filename[i].c_str());
@@ -23,10 +25,21 @@ sprite::~sprite()
 
 void sprite::update(float deltaTime)
 {
+	timer += deltaTime;
 
+	std::cout << "timer: " << timer << std::endl;
+
+	if (timer >= 1.0f) {
+		timer = 0.0f;
+		currentFrame++;
+
+		if (currentFrame >= frameCount) {
+			currentFrame = 0;
+		}
+	}
 }
 
 void sprite::draw()
 {
-	DrawTexture(spriteCells[1], 4, 4, WHITE);
+	DrawTexture(spriteCells[currentFrame], x, y, WHITE);
 }
