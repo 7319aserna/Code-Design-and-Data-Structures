@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Templates", "Templates\Temp
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Raylib_Practice", "Raylib_Practice\Raylib_Practice.vcxproj", "{E9C8408B-6204-48F2-A128-EE28015B9DED}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dynamic_Arrays", "Dynamic_Arrays\Dynamic_Arrays.vcxproj", "{FE02C6C4-E097-422D-9629-B24C1DE70035}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{E9C8408B-6204-48F2-A128-EE28015B9DED}.Release|x64.Build.0 = Release|x64
 		{E9C8408B-6204-48F2-A128-EE28015B9DED}.Release|x86.ActiveCfg = Release|Win32
 		{E9C8408B-6204-48F2-A128-EE28015B9DED}.Release|x86.Build.0 = Release|Win32
+		{FE02C6C4-E097-422D-9629-B24C1DE70035}.Debug|x64.ActiveCfg = Debug|x64
+		{FE02C6C4-E097-422D-9629-B24C1DE70035}.Debug|x64.Build.0 = Debug|x64
+		{FE02C6C4-E097-422D-9629-B24C1DE70035}.Debug|x86.ActiveCfg = Debug|Win32
+		{FE02C6C4-E097-422D-9629-B24C1DE70035}.Debug|x86.Build.0 = Debug|Win32
+		{FE02C6C4-E097-422D-9629-B24C1DE70035}.Release|x64.ActiveCfg = Release|x64
+		{FE02C6C4-E097-422D-9629-B24C1DE70035}.Release|x64.Build.0 = Release|x64
+		{FE02C6C4-E097-422D-9629-B24C1DE70035}.Release|x86.ActiveCfg = Release|Win32
+		{FE02C6C4-E097-422D-9629-B24C1DE70035}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
