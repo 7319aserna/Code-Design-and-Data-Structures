@@ -43,7 +43,7 @@ inline tVector<T>::~tVector()
 template<typename T>
 inline T * tVector<T>::data()
 {
-	return NULL;
+	return arr;
 }
 
 template<typename T>
@@ -70,49 +70,44 @@ inline void tVector<T>::reserve(size_t newCapacity)
 
 	arr = tempArr;
 
-	capacity = newCapacity;
+	arrCapacity = newCapacity;
 }
 
 template<typename T>
 inline void tVector<T>::push_back(const T & value)
 {	
-	if (arrSize < arrCapacity) {
-		arr[arrSize] = value;
-		arrSize++;
-	}
-	
 	if (arrSize >= arrCapacity) {
 		// This only changes the variable for the Array Capacity, not the Array (arr = new T[10]) itself.
 		reserve(arrCapacity * GROWTH_FACTOR);
 	}
+
+	arr[arrSize] = value;
+	arrSize++;
 }
 
 template<typename T>
 inline void tVector<T>::pop_back()
 {
-	/*if (arrSize < 0) {
-	}*/
-
 	arrSize--;
 }
 
 template<typename T>
 inline T & tVector<T>::at(size_t index)
 {
-	// Whatever is in the parameter of index, it would grab what that number is.
-	index = 
-	return index;
-	// TODO: insert return statement here
+	// In the Array, whatever is chosen as the index, the At function would go through the Array and...
+	// ... check to see if that index matches the location whithin the Array and return the arr[index].
+
+	return arr[index];
 }
 
 template<typename T>
 inline size_t tVector<T>::size() const
 {
-	return size_t();
+	return size_t(arrSize);
 }
 
 template<typename T>
 inline size_t tVector<T>::capacity() const
 {
-	return size_t();
+	return size_t(arrCapacity);
 }

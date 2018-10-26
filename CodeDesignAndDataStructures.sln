@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Raylib_Practice", "Raylib_P
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dynamic_Arrays", "Dynamic_Arrays\Dynamic_Arrays.vcxproj", "{FE02C6C4-E097-422D-9629-B24C1DE70035}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "A1US_Code_Design_And_Data_Structures_Assessment", "A1US_Code_Design_And_Data_Structures_Assessment\A1US_Code_Design_And_Data_Structures_Assessment.vcxproj", "{33ABFD27-253D-4B52-84BE-C08D8E1DE8D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{FE02C6C4-E097-422D-9629-B24C1DE70035}.Release|x64.Build.0 = Release|x64
 		{FE02C6C4-E097-422D-9629-B24C1DE70035}.Release|x86.ActiveCfg = Release|Win32
 		{FE02C6C4-E097-422D-9629-B24C1DE70035}.Release|x86.Build.0 = Release|Win32
+		{33ABFD27-253D-4B52-84BE-C08D8E1DE8D4}.Debug|x64.ActiveCfg = Debug|x64
+		{33ABFD27-253D-4B52-84BE-C08D8E1DE8D4}.Debug|x64.Build.0 = Debug|x64
+		{33ABFD27-253D-4B52-84BE-C08D8E1DE8D4}.Debug|x86.ActiveCfg = Debug|Win32
+		{33ABFD27-253D-4B52-84BE-C08D8E1DE8D4}.Debug|x86.Build.0 = Debug|Win32
+		{33ABFD27-253D-4B52-84BE-C08D8E1DE8D4}.Release|x64.ActiveCfg = Release|x64
+		{33ABFD27-253D-4B52-84BE-C08D8E1DE8D4}.Release|x64.Build.0 = Release|x64
+		{33ABFD27-253D-4B52-84BE-C08D8E1DE8D4}.Release|x86.ActiveCfg = Release|Win32
+		{33ABFD27-253D-4B52-84BE-C08D8E1DE8D4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
