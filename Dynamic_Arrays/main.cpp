@@ -1,4 +1,5 @@
 #include <iostream>
+#include "player.h"
 #include "tQueue.h"
 #include "tStack.h"
 #include "tVector.h"
@@ -11,6 +12,9 @@ void printTop(const tStack<int> &stack)
 	std::cout << "Const Top: " << stack.top() << std::endl;
 }
 */
+
+int screenWidth = 960;
+int screenHeight = 540;
 
 int main()
 {
@@ -94,7 +98,8 @@ int main()
 	const tStack<int> constBottomlessStackObject;
 	printTop(constBottomlessStackObject);
 	*/
-
+	
+	/*
 	// ***---Queue Exercise---*** //
 	tQueue<int> queueObject;
 
@@ -111,7 +116,29 @@ int main()
 	std::cout << '\n' << "Front: " << queueObject.front() << std::endl;
 	std::cout << "Back: " << queueObject.back() << std::endl;
 
-	std::cout << queueObject.size();
+	std::cout << "Size: " << queueObject.size();
 
-	return 0;
+	std::cout << std::endl;
+	tQueue<int>(10, 22);
+	*/
+
+	InitWindow(screenWidth, screenHeight, "Queues");
+	SetTargetFPS(60);
+
+	player playerObject;
+	playerObject.position = { 100, 100 };
+	playerObject.speed = 18;
+
+	while (!WindowShouldClose()) {
+
+		playerObject.update(GetFrameTime());
+
+		BeginDrawing();
+
+		ClearBackground(RAYWHITE);
+
+		playerObject.draw();
+
+		EndDrawing();
+	}
 }

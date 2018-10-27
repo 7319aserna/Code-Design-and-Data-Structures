@@ -1,29 +1,6 @@
 ﻿  main.cpp
-c:\users\s189074\source\repos\code-design-and-data-structures\dynamic_arrays\tqueue.h(52): warning C4018: '<': signed/unsigned mismatch
-  c:\users\s189074\source\repos\code-design-and-data-structures\dynamic_arrays\tqueue.h(48): note: while compiling class template member function 'void tQueue<int>::pop(void)'
-  c:\users\s189074\source\repos\code-design-and-data-structures\dynamic_arrays\main.cpp(109): note: see reference to function template instantiation 'void tQueue<int>::pop(void)' being compiled
-  c:\users\s189074\source\repos\code-design-and-data-structures\dynamic_arrays\main.cpp(99): note: see reference to class template instantiation 'tQueue<int>' being compiled
-c:\users\s189074\source\repos\code-design-and-data-structures\dynamic_arrays\tvector.h(65): warning C4018: '<': signed/unsigned mismatch
-  c:\users\s189074\source\repos\code-design-and-data-structures\dynamic_arrays\tvector.h(51): note: while compiling class template member function 'void tVector<T>::reserve(size_t)'
-          with
-          [
-              T=int
-          ]
-  c:\users\s189074\source\repos\code-design-and-data-structures\dynamic_arrays\tvector.h(81): note: see reference to function template instantiation 'void tVector<T>::reserve(size_t)' being compiled
-          with
-          [
-              T=int
-          ]
-  c:\users\s189074\source\repos\code-design-and-data-structures\dynamic_arrays\tvector.h(31): note: while compiling class template member function 'tVector<T>::tVector(void)'
-          with
-          [
-              T=int
-          ]
-  c:\users\s189074\source\repos\code-design-and-data-structures\dynamic_arrays\tqueue.h(29): note: see reference to function template instantiation 'tVector<T>::tVector(void)' being compiled
-          with
-          [
-              T=int
-          ]
-  c:\users\s189074\source\repos\code-design-and-data-structures\dynamic_arrays\tqueue.h(29): note: while compiling class template member function 'tQueue<int>::tQueue(void)'
-  c:\users\s189074\source\repos\code-design-and-data-structures\dynamic_arrays\main.cpp(99): note: see reference to function template instantiation 'tQueue<int>::tQueue(void)' being compiled
+  player.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\dynamic_arrays\player.cpp(27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\dynamic_arrays\player.cpp(28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
   Dynamic_Arrays.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\Debug\Dynamic_Arrays.exe

@@ -22,6 +22,8 @@ public:
 
 	const T& front() const;
 	const T& back() const;
+
+	bool empty() const;
 };
 
 template<typename T>
@@ -35,6 +37,10 @@ inline tQueue<T>::tQueue(size_t count, const T & value)
 	// For the count, it is the amount of the value, so if the count...
 	// ... for example is 50 and the value is 22, there will be 50 spaces(count) that...
 	// ... would be filled by 22(value) in each space.
+	for (int i = 0; i < count; i++) {
+		vec.push_back(value);
+		std::cout << value << std::endl;
+	}
 }
 
 template<typename T>
@@ -82,11 +88,23 @@ inline const T & tQueue<T>::front() const
 {
 	// Whatever value is at the front, it will be constant and would no longer...
 	// ... be able to change
-	//vec.at(0) = const vec.at(0);
+	return vec.at(0);
 }
 
 template<typename T>
 inline const T & tQueue<T>::back() const
 {
-	// TODO: insert return statement here
+	return vec.at(vec.size() - 1);
+}
+
+template<typename T>
+inline bool tQueue<T>::empty() const
+{
+	if (size() == 0) {
+		return false;
+	}
+	else
+	{
+		return true;
+	}
 }
