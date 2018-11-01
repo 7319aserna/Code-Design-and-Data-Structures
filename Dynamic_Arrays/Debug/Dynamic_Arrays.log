@@ -1,6 +1,1 @@
-﻿  main.cpp
-  player.cpp
-c:\users\s189074\source\repos\code-design-and-data-structures\dynamic_arrays\player.cpp(27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-c:\users\s189074\source\repos\code-design-and-data-structures\dynamic_arrays\player.cpp(28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  Generating Code...
-  Dynamic_Arrays.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\Debug\Dynamic_Arrays.exe
+﻿

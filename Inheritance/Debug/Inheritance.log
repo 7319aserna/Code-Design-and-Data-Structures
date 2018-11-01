@@ -1,4 +1,1 @@
-﻿  button.cpp
-c:\users\s189074\source\repos\code-design-and-data-structures\inheritance\button.cpp(35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\s189074\source\repos\code-design-and-data-structures\inheritance\button.cpp(47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  Inheritance.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\Debug\Inheritance.exe
+﻿

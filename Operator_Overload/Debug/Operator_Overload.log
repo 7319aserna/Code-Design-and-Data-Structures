@@ -1,11 +1,1 @@
-﻿  main.cpp
-c:\users\s189074\source\repos\code-design-and-data-structures\operator_overload\main.cpp(12): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  my_Hero.cpp
-c:\users\s189074\source\repos\code-design-and-data-structures\operator_overload\my_hero.cpp(12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\s189074\source\repos\code-design-and-data-structures\operator_overload\my_hero.cpp(36): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\s189074\source\repos\code-design-and-data-structures\operator_overload\my_hero.cpp(37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\s189074\source\repos\code-design-and-data-structures\operator_overload\my_hero.cpp(38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\s189074\source\repos\code-design-and-data-structures\operator_overload\my_hero.cpp(39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-c:\users\s189074\source\repos\code-design-and-data-structures\operator_overload\my_hero.cpp(40): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  Generating Code...
-  Operator_Overload.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\Debug\Operator_Overload.exe
+﻿
