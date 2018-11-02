@@ -6,9 +6,9 @@
 class highScoreEntry
 {
 public:
-	/*highScoreEntry(const std::string & _name, int _score = 1, int _level = 1);*/
+	highScoreEntry(const std::string & _name, int _score = 1, int _level = 1);
 
-	std::string name = "";
+	std::string name;
 	int score = 0;
 	int level = 1;
 

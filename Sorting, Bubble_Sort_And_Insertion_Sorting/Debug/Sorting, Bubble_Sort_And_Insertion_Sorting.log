@@ -1,5 +1,5 @@
 ﻿  highScoreEntry.cpp
+  highScoreTable.cpp
   main.cpp
-c:\users\s189074\code-design-and-data-structures\sorting, bubble_sort_and_insertion_sorting\main.cpp(26): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\sorting, bubble_sort_and_insertion_sorting\main.cpp(46): error C2676: binary '<': 'highScoreEntry' does not define this operator or a conversion to a type acceptable to the predefined operator
   Generating Code...
-  Sorting, Bubble_Sort_And_Insertion_Sorting.vcxproj -> C:\Users\s189074\Code-Design-and-Data-Structures\Debug\Sorting, Bubble_Sort_And_Insertion_Sorting.exe
