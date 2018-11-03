@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sorting, Bubble_Sort_And_In
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Merge_Sort", "Merge_Sort\Merge_Sort.vcxproj", "{A9C12364-2D22-47FA-8312-2D335AA3F19A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Singletons_and_Enums", "Singletons_and_Enums\Singletons_and_Enums.vcxproj", "{0353D030-28B7-488D-BE8C-DC2E4373CA2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{A9C12364-2D22-47FA-8312-2D335AA3F19A}.Release|x64.Build.0 = Release|x64
 		{A9C12364-2D22-47FA-8312-2D335AA3F19A}.Release|x86.ActiveCfg = Release|Win32
 		{A9C12364-2D22-47FA-8312-2D335AA3F19A}.Release|x86.Build.0 = Release|Win32
+		{0353D030-28B7-488D-BE8C-DC2E4373CA2E}.Debug|x64.ActiveCfg = Debug|x64
+		{0353D030-28B7-488D-BE8C-DC2E4373CA2E}.Debug|x64.Build.0 = Debug|x64
+		{0353D030-28B7-488D-BE8C-DC2E4373CA2E}.Debug|x86.ActiveCfg = Debug|Win32
+		{0353D030-28B7-488D-BE8C-DC2E4373CA2E}.Debug|x86.Build.0 = Debug|Win32
+		{0353D030-28B7-488D-BE8C-DC2E4373CA2E}.Release|x64.ActiveCfg = Release|x64
+		{0353D030-28B7-488D-BE8C-DC2E4373CA2E}.Release|x64.Build.0 = Release|x64
+		{0353D030-28B7-488D-BE8C-DC2E4373CA2E}.Release|x86.ActiveCfg = Release|Win32
+		{0353D030-28B7-488D-BE8C-DC2E4373CA2E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

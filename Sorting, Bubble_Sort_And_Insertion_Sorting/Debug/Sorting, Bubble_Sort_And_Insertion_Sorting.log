@@ -1,5 +1,1 @@
-﻿  highScoreEntry.cpp
-  highScoreTable.cpp
-  main.cpp
-c:\users\s189074\source\repos\code-design-and-data-structures\sorting, bubble_sort_and_insertion_sorting\main.cpp(46): error C2676: binary '<': 'highScoreEntry' does not define this operator or a conversion to a type acceptable to the predefined operator
-  Generating Code...
+﻿

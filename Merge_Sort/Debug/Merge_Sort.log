@@ -1,6 +1,1 @@
-﻿  main.cpp
-c:\users\s189074\source\repos\code-design-and-data-structures\merge_sort\main.cpp(20): warning C4018: '<=': signed/unsigned mismatch
-c:\users\s189074\source\repos\code-design-and-data-structures\merge_sort\main.cpp(44): error C2065: 'L': undeclared identifier
-c:\users\s189074\source\repos\code-design-and-data-structures\merge_sort\main.cpp(44): error C2541: 'delete': cannot delete objects that are not pointers
-c:\users\s189074\source\repos\code-design-and-data-structures\merge_sort\main.cpp(45): error C2065: 'R': undeclared identifier
-c:\users\s189074\source\repos\code-design-and-data-structures\merge_sort\main.cpp(45): error C2541: 'delete': cannot delete objects that are not pointers
+﻿

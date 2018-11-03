@@ -14,9 +14,9 @@ public:
 
 	int frameCount = 0;
 	int mph;
-	int direction = 1;
 	int currentFrame = 0;
 
+	float rotation;
 	float timer = 0.0f;
 
 	Texture2D texture;
