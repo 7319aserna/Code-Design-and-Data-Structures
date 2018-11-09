@@ -5,8 +5,8 @@
 #include "raylib/raylib.h"
 
 // -----***** Game Idea *****----- //
-// The idea for this little game would have to be to survive the falling platforms.
-
+// This is gonna be the main menu for the game, I would have...
+// ... to port this to my Assessable.
 int main() {
 
 	int screenWidth = 910;
@@ -37,11 +37,11 @@ int main() {
 			mainMenuObject.draw(screenWidth / 4, screenHeight / 16);
 		}
 
-		// If the Game State is 1 (Start -> Character Select)
-		if (GameState::GetInstance().getState() == 1) {
-			mainMenuObject.update(GetFrameTime());
-			mainMenuObject.draw(screenWidth / 4, screenHeight / 16);
-		}
+		//// If the Game State is 1 (Start -> Character Select)
+		//if (GameState::GetInstance().getState() == 1) {
+		//	mainMenuObject.update(GetFrameTime());
+		//	mainMenuObject.draw(screenWidth / 4, screenHeight / 16);
+		//}
 
 		// If the Game State is 2 (Options)
 		if (GameState::GetInstance().getState() == 2) {
@@ -49,12 +49,12 @@ int main() {
 			optionsObject.draw();
 		}
 
-		// If the Game State is 6 (Game Exit)
-		if (GameState::GetInstance().getState() == 6) {
-			CloseWindow();
-			
-			return 0;
-		}
+		//// If the Game State is 6 (Game Exit)
+		//if (GameState::GetInstance().getState() == 6) {
+		//	CloseWindow();
+		//	
+		//	return 0;
+		//}
 
 		EndDrawing();
 	}

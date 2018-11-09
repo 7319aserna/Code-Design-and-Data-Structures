@@ -39,53 +39,49 @@ void mainMenu::draw(float width, float height)
 
 void mainMenu::update(float deltaTime)
 {
-	// Have a true or false statement, if on main menu, buttosn are active
-	// .. if on other menu, buttons are gone.
-	active = true;
+	if (GameState::GetInstance().getState() == 0) {
+		// Make three buttons
+		Rectangle buttonRectangleObject[3];
 
-	if (active == true){
-	Rectangle buttonRectangleObject[3];
-
-		for (int i = 0; i < 3; i++)
-		{
+		for (int i = 0; i < 3; i++) {
+			// Start Button
 			if (i == 0) {
 				buttonRectangleObject[i].x = 230;
 				buttonRectangleObject[i].y = 160;
 				buttonRectangleObject[i].width = 470;
 				buttonRectangleObject[i].height = 110;
-				DrawRectangle(buttonRectangleObject[i].x, buttonRectangleObject[i].y, buttonRectangleObject[i].width, buttonRectangleObject[i].height, BLACK);
 			}
-
+			// Options Button
 			if (i == 1) {
 				buttonRectangleObject[i].x = 230;
 				buttonRectangleObject[i].y = 295;
 				buttonRectangleObject[i].width = 470;
 				buttonRectangleObject[i].height = 110;
-				DrawRectangle(buttonRectangleObject[i].x, buttonRectangleObject[i].y, buttonRectangleObject[i].width, buttonRectangleObject[i].height, ORANGE);
 			}
-
+			// Exit Button
 			if (i == 2) {
 				buttonRectangleObject[i].x = 230;
 				buttonRectangleObject[i].y = 425;
 				buttonRectangleObject[i].width = 470;
 				buttonRectangleObject[i].height = 110;
-				DrawRectangle(buttonRectangleObject[i].x, buttonRectangleObject[i].y, buttonRectangleObject[i].width, buttonRectangleObject[i].height, ORANGE);
 			}
 		}
-	mousePoint = GetMousePosition();
+		mousePoint = GetMousePosition();
 
+		// Check collision between the mouse and the buttons
 		for (int i = 0; i < 3; i++) {
+
+			// Start Menu
 			if (CheckCollisionPointRec(mousePoint, buttonRectangleObject[0]) && IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
 				GameState::GetInstance().setState(1);
-				active = false;
 			}
+			// Options Menu
 			if (CheckCollisionPointRec(mousePoint, buttonRectangleObject[1]) && IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
 				GameState::GetInstance().setState(2);
-				active = false;
 			}
+			// Exit
 			if (CheckCollisionPointRec(mousePoint, buttonRectangleObject[2]) && IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
 				GameState::GetInstance().setState(6);
-				active = false;
 			}
 		}
 	}

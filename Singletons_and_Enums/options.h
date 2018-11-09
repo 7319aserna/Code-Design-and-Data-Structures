@@ -8,16 +8,11 @@ class options :
 public:
 	options();
 	~options();
-	// Buttons
-	Texture2D buttonTexture;
-
-	// Collision
-	Vector2 mousePoint;
 
 	// Textures
 	Texture2D optionsTexture;
 
 	// Void Functions
-	void draw();
+	void draw(int screenWidth, int screenHeight);
 	void update(float deltaTime);
 };

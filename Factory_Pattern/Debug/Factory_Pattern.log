@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\main.cpp(43): warning C4018: '<': signed/unsigned mismatch
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\main.cpp(49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Factory_Pattern.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\Debug\Factory_Pattern.exe
