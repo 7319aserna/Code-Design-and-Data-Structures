@@ -30,3 +30,10 @@ SimpleSprite::SimpleSprite(const std::string & _filename, const std::string _spr
 	rot = 0.0f;
 	sprType = _sprType;
 }
+
+SimpleSprite * SimpleSprite::Clone()
+{
+	// Returns new instance of class
+	// new instance based on currtent object being cloned
+	return new SimpleSprite(*this);
+}

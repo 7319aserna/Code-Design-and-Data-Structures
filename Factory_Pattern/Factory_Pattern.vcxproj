@@ -23,6 +23,7 @@
     <ProjectGuid>{9B803DFA-744A-422A-ADD6-5BBDD12CBB6A}</ProjectGuid>
     <RootNamespace>FactoryPattern</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>Object_Pooling</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,6 +141,7 @@
     <ClInclude Include="RedBox.h" />
     <ClInclude Include="SimpleSprite.h" />
     <ClInclude Include="suprise_Singleton.h" />
+    <ClInclude Include="tObjectPool.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

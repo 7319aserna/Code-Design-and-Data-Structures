@@ -30,9 +30,9 @@ int main() {
 
 	std::vector<SimpleSprite *> spritesOrSomething;
 	spritesOrSomething.push_back(FallingFactory::getRandom());
+	/*spritesOrSomething.push_back(FallingFactory::getRandom());
 	spritesOrSomething.push_back(FallingFactory::getRandom());
-	spritesOrSomething.push_back(FallingFactory::getRandom());
-	spritesOrSomething.push_back(FallingFactory::getRandom());
+	spritesOrSomething.push_back(FallingFactory::getRandom());*/
 
 	while (!WindowShouldClose()) {
 
@@ -52,9 +52,25 @@ int main() {
 		}
 
 		if (IsKeyPressed(KEY_Q)) {
-			spritesOrSomething.push_back(FallingFactory::getRandom());
-		}
+			size_t randIndex = rand() % spritesOrSomething.size();
+			spritesOrSomething.push_back(spritesOrSomething[randIndex]->Clone());
 
+			int meteorLeftOrRightOffset = (rand() % 50) - 25;
+			spritesOrSomething.back()->r2.x += meteorLeftOrRightOffset;
+			spritesOrSomething.back()->r2.y += meteorLeftOrRightOffset;
+			/*
+			if (spritesOrSomething[randIndex]->Clone()) {
+				int meteorPosLeftOrRight = rand() % 2;
+				std::cout << meteorPosLeftOrRight;
+				if (meteorPosLeftOrRight == 0) {
+					spritesOrSomething.back()->r2.x -= 25;
+				}
+				else {
+					spritesOrSomething.back()->r2.x += 25;
+				}
+			}
+		*/
+		}
 		/*simpleSpriteObject.translate({0, 10});
 
 		simpleSpriteObject.draw();*/

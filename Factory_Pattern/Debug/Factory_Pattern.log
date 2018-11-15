@@ -1,4 +1,5 @@
-﻿  main.cpp
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Factory_Pattern.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
 c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\main.cpp(43): warning C4018: '<': signed/unsigned mismatch
 c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\main.cpp(49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  Factory_Pattern.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\Debug\Factory_Pattern.exe
+  Factory_Pattern.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\Debug\Object_Pooling.exe

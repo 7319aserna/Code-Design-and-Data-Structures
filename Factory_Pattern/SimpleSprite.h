@@ -13,4 +13,5 @@ public:
 	void draw();
 	SimpleSprite();
 	SimpleSprite(const std::string & filename, const std::string _sprType = "", float _scale = 1);
+	SimpleSprite * Clone();
 };
