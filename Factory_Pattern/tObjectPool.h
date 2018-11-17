@@ -26,13 +26,13 @@ class tObjectPool {
 };
 
 template<typename T>
-inline tObjectPool<T>::ObjectPool()
-{
+inline tObjectPool<T>::ObjectPool() {
 }
 
 template<typename T>
-inline tObjectPool<T>::ObjectPool(size_t initialCapacity)
-{
+inline tObjectPool<T>::ObjectPool(size_t initialCapacity) {
+	// Initializes the pool to have a set number of objects
+	// I believe that is the limit, so only have a set number if objects
 	initialCapacity = pool;
 }
 
@@ -44,7 +44,12 @@ inline tObjectPool<T>::~ObjectPool()
 template<typename T>
 inline T * tObjectPool<T>::retrieve()
 {
-	return NULL;
+	if (free == true) {
+		retrieve pool;
+	}
+	else {
+		return nullptr;
+	}
 }
 
 template<typename T>
@@ -55,5 +60,5 @@ inline void tObjectPool<T>::recycle(T * obj)
 template<typename T>
 inline size_t tObjectPool<T>::capacity()
 {
-	return size_t();
+	return size_t(pool);
 }

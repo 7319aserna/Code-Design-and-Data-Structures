@@ -1,1 +1,3 @@
-﻿
+﻿  main.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\merge_sort\main.cpp(20): warning C4018: '<=': signed/unsigned mismatch
+  Merge_Sort.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\Debug\Merge_Sort.exe

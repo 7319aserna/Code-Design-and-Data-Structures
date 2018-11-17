@@ -41,6 +41,11 @@ int main() {
 	}
 	mergeSort(intArr, 0, 8);
 
+	std::cout << '\n' << "Sorted List: " << std::endl;
+	for (int i = 0; i < 9; i++) {
+		std::cout << intArr[i] << " ";
+	}
+
 	return 0;
 	// Would I have to delete the new array ints in the main or not?
 }

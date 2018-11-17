@@ -122,6 +122,7 @@
   <ItemGroup>
     <ClInclude Include="highScoreEntry.h" />
     <ClInclude Include="highScoreTable.h" />
+    <ClInclude Include="libraries.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

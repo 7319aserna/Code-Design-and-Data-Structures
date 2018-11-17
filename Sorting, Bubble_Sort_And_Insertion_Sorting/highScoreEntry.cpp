@@ -1,6 +1,4 @@
 #include "highScoreEntry.h"
-#include <iostream>
-#include <vector>
 
 highScoreEntry::highScoreEntry(const std::string & _name, int _score, int _level)
 {
@@ -15,5 +13,4 @@ highScoreEntry::highScoreEntry()
 
 highScoreEntry::~highScoreEntry()
 {
-
 }

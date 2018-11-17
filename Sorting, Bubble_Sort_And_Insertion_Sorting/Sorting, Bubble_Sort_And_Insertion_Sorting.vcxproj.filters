@@ -18,10 +18,10 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="highScoreEntry.cpp">
+    <ClCompile Include="highScoreTable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="highScoreTable.cpp">
+    <ClCompile Include="highScoreEntry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -30,6 +30,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="highScoreTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

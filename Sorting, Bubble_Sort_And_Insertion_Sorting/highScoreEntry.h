@@ -10,7 +10,7 @@ public:
 
 	std::string name;
 	int score = 0;
-	int level = 1;
+	int level = 0;
 
 	highScoreEntry();
 	~highScoreEntry();
