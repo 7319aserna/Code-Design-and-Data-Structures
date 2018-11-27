@@ -14,11 +14,6 @@ int main() {
 	tile popsicle("mappack/PNG/mapTile_045.png");
 	tile snowman("mappack/PNG/mapTile_094.png");
 
-	// grid width is now 8 in this instance
-	int cellsPerRow = screenHeight / 64;
-	// gird height is now 15 in this instance
-	int cellsPerColumn= screenWidth / 64;
-
 	// Use the tile class to make a new array which will then store...
 	// ... the types of tiles there are.
 	tile types[3];

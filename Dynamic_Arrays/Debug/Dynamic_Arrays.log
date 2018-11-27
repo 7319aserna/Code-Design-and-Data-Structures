@@ -1,1 +1,14 @@
-﻿
+﻿  main.cpp
+c:\users\7319a\source\repos\code-design-and-data-structures\dynamic_arrays\main.cpp(42): warning C4018: '<': signed/unsigned mismatch
+c:\users\7319a\source\repos\code-design-and-data-structures\dynamic_arrays\main.cpp(72): warning C4018: '<': signed/unsigned mismatch
+c:\users\7319a\source\repos\code-design-and-data-structures\dynamic_arrays\tvector.h(66): warning C4018: '<': signed/unsigned mismatch
+  c:\users\7319a\source\repos\code-design-and-data-structures\dynamic_arrays\tvector.h(52): note: while compiling class template member function 'void tVector<int>::reserve(size_t)'
+  c:\users\7319a\source\repos\code-design-and-data-structures\dynamic_arrays\tvector.h(82): note: see reference to function template instantiation 'void tVector<int>::reserve(size_t)' being compiled
+  c:\users\7319a\source\repos\code-design-and-data-structures\dynamic_arrays\tvector.h(32): note: while compiling class template member function 'tVector<int>::tVector(void)'
+  c:\users\7319a\source\repos\code-design-and-data-structures\dynamic_arrays\main.cpp(50): note: see reference to function template instantiation 'tVector<int>::tVector(void)' being compiled
+  c:\users\7319a\source\repos\code-design-and-data-structures\dynamic_arrays\main.cpp(50): note: see reference to class template instantiation 'tVector<int>' being compiled
+  player.cpp
+c:\users\7319a\source\repos\code-design-and-data-structures\dynamic_arrays\player.cpp(27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\7319a\source\repos\code-design-and-data-structures\dynamic_arrays\player.cpp(28): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+  Dynamic_Arrays.vcxproj -> C:\Users\7319a\source\repos\Code-Design-and-Data-Structures\Debug\Dynamic_Arrays.exe

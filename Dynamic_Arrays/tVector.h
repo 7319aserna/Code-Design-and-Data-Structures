@@ -1,3 +1,4 @@
+#include "raylib/raylib.h"
 #pragma once
 
 template <typename T>
@@ -29,9 +30,9 @@ public:
 template<typename T>
 inline tVector<T>::tVector()
 {
-	arr = new T[10];
+	arr = new T[20];
 	arrSize = 0;
-	arrCapacity = 10;
+	arrCapacity = 20;
 }
 
 template<typename T>

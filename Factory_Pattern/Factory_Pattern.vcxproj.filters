@@ -65,8 +65,5 @@
     <ClInclude Include="Libaries.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="tObjectPool.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

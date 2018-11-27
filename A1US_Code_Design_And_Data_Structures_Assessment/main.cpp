@@ -1,37 +1,38 @@
+#include "mapCreator.h"
+#include "player.h"
 #include "raylib/raylib.h"
+#include "tVector.h"
 #include <iostream>
-#include "sprite.h"
 #include <string>
+#include <vector>
 
 using namespace::std;
 
 int main() {
-	int screenWidth = 910;
-	int screenHeight = 540;
+	int screenWidth = 1000;
+	int screenHeight = 1000;
 
 	InitWindow(screenWidth, screenHeight, "A1US - Code Design and Data Structures");
 	SetTargetFPS(60);
 
-	sprite playerCarObject;
-	playerCarObject.mph = 0;
-	playerCarObject.position = { 22.0f, 22.0f };
+	mapCreator mC_Object;
+	player p_Object;
 
 	while (!WindowShouldClose()) {
+		// Update
+		//----------------------------------------------------------------------------------
+		//mC_Object.update(GetFrameTime(), screenWidth / 2, screenHeight / 2);
+		p_Object.update(GetFrameTime());
+
 		BeginDrawing();
 
 		ClearBackground(WHITE);
 
-		playerCarObject.update(GetFrameTime());
-
-		playerCarObject.draw();
+		p_Object.draw();
 
 		EndDrawing();
 	}
 	CloseWindow();
 
 	return 0;
-	/*
-	// TODO: Make sure to put the race car files into the folder.
-	string playerRaceCarFiles[] = {"car_blue_3.png"}
-	*/
 }
