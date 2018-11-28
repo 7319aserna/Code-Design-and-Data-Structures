@@ -18,6 +18,7 @@ int screenHeight = 540;
 
 int main()
 {
+	/*
 	// In order to make an array using the tVector class, we would have to make...
 	// ... a Vector that would be able to use a type (int, float, etc) and in this...
 	// ... instance, we will call it BottomlessInt.
@@ -75,6 +76,8 @@ int main()
 	std::cout << std::endl;
 	std::cout << "Size = " << myFries.size() << std::endl;
 	std::cout << "Capacity = " << myFries.capacity() << std::endl;
+	*/
+
 	/*
 	// In order to make an array using the tVector class, we would have to make...
 	// ... a Vector that would be able to use a type (int, float, etc) and in this...
@@ -156,7 +159,7 @@ int main()
 	printTop(constBottomlessStackObject);
 	*/
 	
-	/*
+	
 	// ***---Queue Exercise---*** //
 	tQueue<int> queueObject;
 
@@ -177,7 +180,7 @@ int main()
 
 	std::cout << std::endl;
 	tQueue<int>(10, 22);
-	*/
+	
 
 	/*InitWindow(screenWidth, screenHeight, "Queues");
 	SetTargetFPS(60);

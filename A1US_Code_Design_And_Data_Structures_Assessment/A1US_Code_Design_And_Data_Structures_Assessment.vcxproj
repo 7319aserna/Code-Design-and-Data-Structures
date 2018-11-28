@@ -89,7 +89,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\raylib</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)thirdparty\raylib\lib\$(PlatformShortName)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>raylib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -120,13 +125,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="checkpoint.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mapCreator.cpp" />
     <ClCompile Include="player.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="checkpoint.h" />
     <ClInclude Include="mapCreator.h" />
     <ClInclude Include="player.h" />
+    <ClInclude Include="tQueue.h" />
     <ClInclude Include="tVector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

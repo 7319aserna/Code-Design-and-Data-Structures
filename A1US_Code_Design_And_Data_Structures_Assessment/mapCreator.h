@@ -1,4 +1,4 @@
-#include "raylib/raylib.h"
+#include "raylib.h"
 #pragma once
 
 class mapCreator {
@@ -19,4 +19,5 @@ public:
 	Rectangle rectangleObject;
 
 	void update(float deltaTime, int screenWidth, int screenHeight);
+	void draw();
 };

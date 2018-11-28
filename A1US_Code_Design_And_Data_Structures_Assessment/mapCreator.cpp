@@ -1,4 +1,8 @@
 #include "mapCreator.h"
+#include "raylib.h"
+
+mapCreator tileTypes[8];
+int grid[3][5];
 
 mapCreator::mapCreator()
 {
@@ -16,7 +20,8 @@ mapCreator::~mapCreator()
 
 void mapCreator::update(float deltaTime, int screenWidth, int screenHeight)
 {
-	SetWindowSize(755, 1255);
+	// Note: SetWindowSize(755, 1255) = Original Size
+	SetWindowSize(1000, 1255);
 	SetWindowPosition(50, 50);
 
 	mapCreator apshalt_Road_01("PNG/Tiles/Asphalt road/road_asphalt01.png");
@@ -30,7 +35,7 @@ void mapCreator::update(float deltaTime, int screenWidth, int screenHeight)
 
 	// Use the mapCreator class to make a new array which will then store...
 	// ... the types of tiles there are.
-	mapCreator tileTypes[8];
+	//mapCreator tileTypes[8];
 	tileTypes[0] = apshalt_Road_01;
 	tileTypes[1] = apshalt_Road_02;
 	tileTypes[2] = apshalt_Road_03;
@@ -42,7 +47,7 @@ void mapCreator::update(float deltaTime, int screenWidth, int screenHeight)
 
 	// You then make a new int array (grid) which will have positions...
 	// ... to put your textures into it.
-	int grid[3][5];
+	//int grid[3][5];
 	grid[0][0] = 2;
 	grid[1][0] = 1;
 	grid[2][0] = 3;
@@ -62,7 +67,10 @@ void mapCreator::update(float deltaTime, int screenWidth, int screenHeight)
 	grid[0][4] = 4;
 	grid[1][4] = 1;
 	grid[2][4] = 5;
+}
 
+void mapCreator::draw()
+{
 	// The starter cell's x position
 	float cellPositionX = 0.0f;
 

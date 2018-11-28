@@ -1,4 +1,4 @@
-#include "raylib/raylib.h"
+#include "raylib.h"
 #pragma once
 
 template <typename T>

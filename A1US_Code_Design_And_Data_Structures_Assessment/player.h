@@ -1,4 +1,4 @@
-#include "raylib/raylib.h"
+#include "raylib.h"
 #include "tVector.h"
 #pragma once
 
