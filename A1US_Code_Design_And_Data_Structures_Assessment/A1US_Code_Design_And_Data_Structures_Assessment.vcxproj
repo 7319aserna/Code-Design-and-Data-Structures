@@ -126,17 +126,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="bestLap.cpp" />
-    <ClCompile Include="race.cpp" />
+    <ClCompile Include="gameState.cpp" />
+    <ClCompile Include="mainMenu.cpp" />
+    <ClCompile Include="raceTrack.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mapCreator.cpp" />
     <ClCompile Include="player.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bestLap.h" />
-    <ClInclude Include="race.h" />
+    <ClInclude Include="gameState.h" />
+    <ClInclude Include="libraries.h" />
+    <ClInclude Include="mainMenu.h" />
+    <ClInclude Include="raceTrack.h" />
     <ClInclude Include="mapCreator.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="tQueue.h" />
+    <ClInclude Include="tStack.h" />
     <ClInclude Include="tVector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

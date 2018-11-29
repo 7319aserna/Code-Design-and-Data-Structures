@@ -1,9 +1,9 @@
 #include <iostream>
 #include "main_Menu.h"
-#include "raylib/raylib.h"
+#include "raylib.h"
 #pragma once
 
-class options : 
+class options :
 	mainMenu {
 public:
 	options();
@@ -11,8 +11,8 @@ public:
 
 	// Textures
 	Texture2D optionsTexture;
-
 	// Void Functions
-	void draw(int screenWidth, int screenHeight);
+	void draw();
 	void update(float deltaTime);
+
 };

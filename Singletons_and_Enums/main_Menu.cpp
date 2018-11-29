@@ -1,5 +1,6 @@
 #include "main_Menu.h"
 #include "gameState.h"
+#include "raylib.h"
 
 mainMenu::mainMenu()
 {

@@ -1,11 +1,4 @@
-#include "race.h"
-#include "mapCreator.h"
-#include "player.h"
-#include "raylib.h"
-#include "tVector.h"
-#include <iostream>
-#include <string>
-#include <vector>
+#include "libraries.h"
 
 using namespace::std;
 
@@ -16,26 +9,43 @@ int main() {
 	InitWindow(screenWidth, screenHeight, "A1US - Code Design and Data Structures");
 	SetTargetFPS(60);
 
-	race r_Object;
-	mapCreator mC_Object;
-	player p_Object;
+	// Sets the game to start in the Main Menu
+	GameState::GetInstance().setState(0);
+
+	mapCreator mapCreatorObject;
+	raceTrack raceTrackObject;
+	player playerObject;
 
 	while (!WindowShouldClose()) {
-		// Update
-		//----------------------------------------------------------------------------------
-		mC_Object.update(GetFrameTime(), screenWidth / 2, screenHeight / 2);
-		p_Object.update(GetFrameTime());
-		r_Object.update(GetFrameTime(), p_Object);
+		// If the Game State is 0 (Main Menu)
+		if (GameState::GetInstance().getState() == 0) {
+			mainMenu mainMenuObject;
+			mainMenuObject.update(GetFrameTime());
+			BeginDrawing();
+			ClearBackground(BEIGE);
+			mainMenuObject.draw(screenWidth / 4, screenHeight / 16);
+			EndDrawing();
+		}
+
+		// If the Game State is 1 (Start Game)
+		if (GameState::GetInstance().getState() == 1) {
+		mapCreatorObject.update(GetFrameTime(), screenWidth / 2, screenHeight / 2);
+		playerObject.update(GetFrameTime());
+		raceTrackObject.update(GetFrameTime(), playerObject);
 
 		BeginDrawing();
-
 		ClearBackground(WHITE);
-
-		mC_Object.draw();
-		p_Object.draw();
-		r_Object.draw();
-
+		mapCreatorObject.draw();
+		playerObject.draw();
+		raceTrackObject.draw();
 		EndDrawing();
+		}
+
+		// If the Game State is 2 (Exit Game)
+		if (GameState::GetInstance().getState() == 2) {
+			CloseWindow();
+			return 0;
+		}
 	}
 	CloseWindow();
 

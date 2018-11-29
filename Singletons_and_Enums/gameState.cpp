@@ -15,13 +15,9 @@ int GameState::getState() {
 			break;
 		case 2: std::cout << "Options" << std::endl;
 			break;
-		case 3: std::cout << "Player Choice" << std::endl;
-			break;
 		case 4: std::cout << "Gameplay in progress" << std::endl;
 			break;
-		case 5: std::cout << "Game Over" << std::endl;
-			break;
-		case 6: std::cout << "Game Exit" << std::endl;
+		case 5: std::cout << "Game Exit" << std::endl;
 			break;
 	}
 	return state;	// This would return whatever state the...

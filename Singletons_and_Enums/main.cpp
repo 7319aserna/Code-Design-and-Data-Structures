@@ -2,7 +2,7 @@
 #include <iostream>
 #include "main_Menu.h"
 #include "options.h"
-#include "raylib/raylib.h"
+#include "raylib.h"
 
 // -----***** Game Idea *****----- //
 // This is gonna be the main menu for the game, I would have...
@@ -46,7 +46,7 @@ int main() {
 		// If the Game State is 2 (Options)
 		if (GameState::GetInstance().getState() == 2) {
 			optionsObject.update(GetFrameTime());
-			optionsObject.draw();
+			//optionsObject.draw(39, 50);
 		}
 
 		//// If the Game State is 6 (Game Exit)

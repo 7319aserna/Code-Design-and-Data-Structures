@@ -11,7 +11,7 @@ tQueue<int> spawnQueueObject;
 
 player::player()
 {
-	texture = LoadTexture("PNG/Cars/car_red_3");
+	texture = LoadTexture("PNG/Cars/car_red_3.png");
 	position = { 445, 445};
 
 	playerRectangleObject.x = position.x;
@@ -229,7 +229,18 @@ void player::update(float deltaTime)
 	}
 }
 
-void player::draw()
-{
-	DrawRectangle(playerRectangleObject.x, playerRectangleObject.y, playerRectangleObject.width, playerRectangleObject.height, SKYBLUE);
+void player::draw() {
+	//DrawRectangle(playerRectangleObject.x, playerRectangleObject.y, playerRectangleObject.width, playerRectangleObject.height, SKYBLUE);
+	if (IsKeyDown(KEY_W) && IsKeyUp(KEY_A) && IsKeyUp(KEY_S) && IsKeyUp(KEY_D)) {
+		DrawTextureEx(texture, { playerRectangleObject.x, playerRectangleObject.y }, 0.0f, 0.75f, WHITE);
+	}
+	if (IsKeyUp(KEY_W) && IsKeyDown(KEY_A) && IsKeyUp(KEY_S) && IsKeyUp(KEY_D)) {
+		DrawTextureEx(texture, { playerRectangleObject.x, playerRectangleObject.y }, -90.0f, 0.75f, WHITE);
+	}
+	if (IsKeyUp(KEY_W) && IsKeyUp(KEY_A) && IsKeyDown(KEY_S) && IsKeyUp(KEY_D)) {
+		DrawTextureEx(texture, { playerRectangleObject.x, playerRectangleObject.y }, -180.0f, 0.75f, WHITE);
+	}
+	if (IsKeyUp(KEY_W) && IsKeyUp(KEY_A) && IsKeyUp(KEY_S) && IsKeyDown(KEY_D)) {
+		DrawTextureEx(texture, { playerRectangleObject.x, playerRectangleObject.y }, -270.0f, 0.75f, WHITE);
+	}
 }
