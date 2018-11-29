@@ -1,0 +1,11 @@
+﻿  highScoreEntry.cpp
+  highScoreTable.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\sorting, bubble_sort_and_insertion_sorting\highscoretable.cpp(33): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+c:\users\s189074\source\repos\code-design-and-data-structures\sorting, bubble_sort_and_insertion_sorting\highscoretable.cpp(87): warning C4552: '+': result of expression not used
+c:\users\s189074\source\repos\code-design-and-data-structures\sorting, bubble_sort_and_insertion_sorting\highscoretable.cpp(129): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+c:\users\s189074\source\repos\code-design-and-data-structures\sorting, bubble_sort_and_insertion_sorting\highscoretable.cpp(194): warning C4552: '+': result of expression not used
+  main.cpp
+  Generating Code...
+c:\users\s189074\source\repos\code-design-and-data-structures\sorting, bubble_sort_and_insertion_sorting\highscoretable.cpp(204): warning C4715: 'HighScoreTable::bottomNNScores': not all control paths return a value
+c:\users\s189074\source\repos\code-design-and-data-structures\sorting, bubble_sort_and_insertion_sorting\highscoretable.cpp(97): warning C4715: 'HighScoreTable::topNNScores': not all control paths return a value
+  Sorting, Bubble_Sort_And_Insertion_Sorting.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\Sorting, Bubble_Sort_And_Insertion_Sorting.exe

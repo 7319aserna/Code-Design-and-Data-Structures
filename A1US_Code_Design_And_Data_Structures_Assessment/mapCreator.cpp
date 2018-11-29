@@ -21,7 +21,7 @@ mapCreator::~mapCreator()
 void mapCreator::update(float deltaTime, int screenWidth, int screenHeight)
 {
 	// Note: SetWindowSize(755, 1255) = Original Size
-	SetWindowSize(1000, 1255);
+	SetWindowSize(1000, 950);
 	SetWindowPosition(50, 50);
 
 	mapCreator apshalt_Road_01("PNG/Tiles/Asphalt road/road_asphalt01.png");
@@ -82,12 +82,12 @@ void mapCreator::draw()
 
 		// Then it would iterate through each row
 		for (int j = 0; j < 5; j++) {
-			DrawTextureEx(tileTypes[grid[s][j]].texture, { cellPositionY, cellPositionX }, 0.0f, 2.0f, WHITE);
+			DrawTextureEx(tileTypes[grid[s][j]].texture, { cellPositionY, cellPositionX }, 0.0f, 1.5f, WHITE);
 
-			cellPositionX += 250;
+			cellPositionX += 187;
 		}
 
 		cellPositionX = 0;
-		cellPositionY += 250;
+		cellPositionY += 187;
 	}
 }

@@ -59,8 +59,9 @@ inline void tQueue<T>::pop()
 	// Note: Maybe make a for loop and then have a temp index...
 	for (int i = 0; i < size() - 1; i++) {
 		vec.at(i) = vec.at(i + 1);
-		std::cout << vec.at(i + 1) << std::endl;
+		//std::cout << vec.at(i + 1) << std::endl;
 	}
+	vec.pop_back();
 }
 
 template<typename T>

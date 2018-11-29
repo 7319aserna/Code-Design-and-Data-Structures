@@ -24,7 +24,10 @@
     <ClCompile Include="player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="checkpoint.cpp">
+    <ClCompile Include="race.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bestLap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,10 +41,13 @@
     <ClInclude Include="player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="checkpoint.h">
+    <ClInclude Include="tQueue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="tQueue.h">
+    <ClInclude Include="race.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bestLap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

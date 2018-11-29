@@ -1,5 +1,5 @@
 #include "SimpleSprite.h"
-#include "raylib/raylib.h"
+#include "raylib.h"
 
 void SimpleSprite::translate(Vector2 delta)
 {

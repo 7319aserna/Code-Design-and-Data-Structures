@@ -11,6 +11,7 @@ public:
 	Texture2D texture;
 	Rectangle playerRectangleObject;
 	Vector2 position;
+	Vector2 spawnPosition;
 
 	int speed;
 	void update(float deltaTime);

@@ -1,0 +1,6 @@
+﻿  main.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\merge_sort\main.cpp(4): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\merge_sort\main.cpp(5): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\merge_sort\main.cpp(20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\merge_sort\main.cpp(55): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Merge_Sort.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\Merge_Sort.exe

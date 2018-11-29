@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "raylib/raylib.h"
+#include "raylib.h"
 class SimpleSprite {
 public:
 	std::string sprType;

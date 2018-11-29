@@ -1,0 +1,7 @@
+﻿  main.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\polymorphism\player.h(2): fatal error C1083: Cannot open include file: 'raylib/raylib.h': No such file or directory
+  player.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\polymorphism\player.h(2): fatal error C1083: Cannot open include file: 'raylib/raylib.h': No such file or directory
+  wizard.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\polymorphism\wizard.cpp(2): fatal error C1083: Cannot open include file: 'raylib/raylib.h': No such file or directory
+  Generating Code...

@@ -1,4 +1,4 @@
-#include "checkpoint.h"
+#include "race.h"
 #include "mapCreator.h"
 #include "player.h"
 #include "raylib.h"
@@ -16,7 +16,7 @@ int main() {
 	InitWindow(screenWidth, screenHeight, "A1US - Code Design and Data Structures");
 	SetTargetFPS(60);
 
-	checkpoint c_Object;
+	race r_Object;
 	mapCreator mC_Object;
 	player p_Object;
 
@@ -25,7 +25,7 @@ int main() {
 		//----------------------------------------------------------------------------------
 		mC_Object.update(GetFrameTime(), screenWidth / 2, screenHeight / 2);
 		p_Object.update(GetFrameTime());
-		c_Object.update(GetFrameTime());
+		r_Object.update(GetFrameTime(), p_Object);
 
 		BeginDrawing();
 
@@ -33,7 +33,7 @@ int main() {
 
 		mC_Object.draw();
 		p_Object.draw();
-		//c_Object.draw();
+		r_Object.draw();
 
 		EndDrawing();
 	}
