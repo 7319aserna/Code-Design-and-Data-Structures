@@ -1,8 +1,63 @@
-﻿  mainMenu.cpp
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (A1US_Code_Design_And_Data_Structures_Assessment.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  bestLap.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\bestlap.cpp(11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\bestlap.cpp(12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\bestlap.cpp(27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\bestlap.cpp(43): warning C4244: 'initializing': conversion from 'size_t' to 'float', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\bestlap.cpp(44): warning C4244: 'argument': conversion from 'float' to 'size_t', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\bestlap.cpp(45): warning C4244: 'argument': conversion from 'float' to 'size_t', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\bestlap.cpp(46): warning C4244: 'argument': conversion from 'float' to 'size_t', possible loss of data
+  gameState.cpp
+  bestLapLevel.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\bestlaplevel.cpp(31): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\bestlaplevel.cpp(33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\bestlaplevel.cpp(35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  mainMenu.cpp
 c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\mainmenu.cpp(44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\mainmenu.cpp(46): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\mainmenu.cpp(48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\mainmenu.cpp(50): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   raceTrack.cpp
+  main.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\main.cpp(26): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  mapCreator.cpp
+  player.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(9): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(42): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(55): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(56): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(72): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(73): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(89): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(90): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(106): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(107): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(160): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(174): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(188): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(202): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(216): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(222): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
   Generating Code...
-  A1US_Code_Design_And_Data_Structures_Assessment.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\A1US_Code_Design_And_Data_Structures_Assessment.exe
+raylib.lib(core.obj) : warning LNK4099: PDB 'raylib.pdb' was not found with 'raylib.lib(core.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\raylib.pdb'; linking object as if no debug info
+raylib.lib(shapes.obj) : warning LNK4099: PDB 'raylib.pdb' was not found with 'raylib.lib(shapes.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\raylib.pdb'; linking object as if no debug info
+raylib.lib(text.obj) : warning LNK4099: PDB 'raylib.pdb' was not found with 'raylib.lib(text.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\raylib.pdb'; linking object as if no debug info
+raylib.lib(textures.obj) : warning LNK4099: PDB 'raylib.pdb' was not found with 'raylib.lib(textures.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\raylib.pdb'; linking object as if no debug info
+raylib.lib(utils.obj) : warning LNK4099: PDB 'raylib.pdb' was not found with 'raylib.lib(utils.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\raylib.pdb'; linking object as if no debug info
+raylib.lib(context.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(context.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
+raylib.lib(init.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(init.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
+raylib.lib(input.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(input.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
+raylib.lib(monitor.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(monitor.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
+raylib.lib(vulkan.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(vulkan.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
+raylib.lib(window.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(window.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
+raylib.lib(win32_init.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(win32_init.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
+raylib.lib(win32_joystick.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(win32_joystick.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
+raylib.lib(win32_monitor.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(win32_monitor.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
+raylib.lib(win32_time.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(win32_time.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
+raylib.lib(win32_thread.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(win32_thread.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
+raylib.lib(win32_window.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(win32_window.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
+raylib.lib(wgl_context.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(wgl_context.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
+raylib.lib(egl_context.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(egl_context.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
+raylib.lib(osmesa_context.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(osmesa_context.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
+  A1US_Code_Design_And_Data_Structures_Assessment.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\A1US_Code_Design_And_Data_Structures_Part_One.exe

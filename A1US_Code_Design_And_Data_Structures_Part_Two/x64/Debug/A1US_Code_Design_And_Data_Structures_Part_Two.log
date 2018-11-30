@@ -1,11 +1,17 @@
-﻿  main.cpp
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\main.cpp(65): warning C4553: '==': result of expression not used; did you intend '='?
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\main.cpp(101): warning C4244: 'argument': conversion from 'int' to 'const T', possible loss of data
-          with
-          [
-              T=float
-          ]
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\main.cpp(109): warning C4553: '==': result of expression not used; did you intend '='?
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\main.cpp(125): warning C4553: '==': result of expression not used; did you intend '='?
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\main.cpp(200): warning C4553: '==': result of expression not used; did you intend '='?
-  A1US_Code_Design_And_Data_Structures_Part_Two.vcxproj -> C:\Users\7319a\source\repos\Code-Design-and-Data-Structures\x64\Debug\A1US_Code_Design_And_Data_Structures_Part_Two.exe
+﻿  currentState.cpp
+  highScoreEntry.cpp
+  highScoreTable.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\highscoretable.cpp(33): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\highscoretable.cpp(87): warning C4552: '+': result of expression not used
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\highscoretable.cpp(129): warning C4806: '==': unsafe operation: no value of type 'bool' promoted to type 'int' can equal the given constant
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\highscoretable.cpp(194): warning C4552: '+': result of expression not used
+  main.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\main.cpp(65): warning C4553: '==': result of expression not used; did you intend '='?
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\main.cpp(101): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\main.cpp(109): warning C4553: '==': result of expression not used; did you intend '='?
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\main.cpp(125): warning C4553: '==': result of expression not used; did you intend '='?
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\main.cpp(200): warning C4553: '==': result of expression not used; did you intend '='?
+  Generating Code...
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\highscoretable.cpp(204): warning C4715: 'highScoreTable::bottomNNScores': not all control paths return a value
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\highscoretable.cpp(97): warning C4715: 'highScoreTable::topNNScores': not all control paths return a value
+  A1US_Code_Design_And_Data_Structures_Part_Two.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\A1US_Code_Design_And_Data_Structures_Part_Two.exe
