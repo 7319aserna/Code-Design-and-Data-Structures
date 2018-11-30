@@ -127,6 +127,7 @@
   <ItemGroup>
     <ClCompile Include="bestLap.cpp" />
     <ClCompile Include="gameState.cpp" />
+    <ClCompile Include="bestLapLevel.cpp" />
     <ClCompile Include="mainMenu.cpp" />
     <ClCompile Include="raceTrack.cpp" />
     <ClCompile Include="main.cpp" />
@@ -136,11 +137,13 @@
   <ItemGroup>
     <ClInclude Include="bestLap.h" />
     <ClInclude Include="gameState.h" />
+    <ClInclude Include="bestLapLevel.h" />
     <ClInclude Include="libraries.h" />
     <ClInclude Include="mainMenu.h" />
     <ClInclude Include="raceTrack.h" />
     <ClInclude Include="mapCreator.h" />
     <ClInclude Include="player.h" />
+    <ClInclude Include="tObjectPool.h" />
     <ClInclude Include="tQueue.h" />
     <ClInclude Include="tStack.h" />
     <ClInclude Include="tVector.h" />

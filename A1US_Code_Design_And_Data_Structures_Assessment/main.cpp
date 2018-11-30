@@ -29,20 +29,31 @@ int main() {
 
 		// If the Game State is 1 (Start Game)
 		if (GameState::GetInstance().getState() == 1) {
-		mapCreatorObject.update(GetFrameTime(), screenWidth / 2, screenHeight / 2);
-		playerObject.update(GetFrameTime());
-		raceTrackObject.update(GetFrameTime(), playerObject);
+			mapCreatorObject.update(GetFrameTime(), screenWidth / 2, screenHeight / 2);
+			playerObject.update(GetFrameTime());
+			raceTrackObject.update(GetFrameTime(), playerObject, GameState::GetInstance());
 
-		BeginDrawing();
-		ClearBackground(WHITE);
-		mapCreatorObject.draw();
-		playerObject.draw();
-		raceTrackObject.draw();
-		EndDrawing();
+			BeginDrawing();
+			ClearBackground(WHITE);
+			mapCreatorObject.draw();
+			playerObject.draw();
+			raceTrackObject.draw();
+			EndDrawing();
 		}
 
-		// If the Game State is 2 (Exit Game)
+		// If the Game State is 2 (Best Lap Level)
 		if (GameState::GetInstance().getState() == 2) {
+			bestLapLevel bestLapObject;
+			bestLapObject.update(GetFrameTime());
+
+			BeginDrawing();
+			ClearBackground(DARKBLUE);
+			bestLapObject.draw(raceTrackObject);
+			EndDrawing();
+		}
+
+		// If the Game State is 3 (Exit Game)
+		if (GameState::GetInstance().getState() == 3) {
 			CloseWindow();
 			return 0;
 		}

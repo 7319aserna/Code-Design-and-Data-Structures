@@ -1,22 +1,31 @@
-﻿  SimpleSprite.cpp
-raylib.lib(core.obj) : warning LNK4099: PDB 'raylib.pdb' was not found with 'raylib.lib(core.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\raylib.pdb'; linking object as if no debug info
-raylib.lib(shapes.obj) : warning LNK4099: PDB 'raylib.pdb' was not found with 'raylib.lib(shapes.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\raylib.pdb'; linking object as if no debug info
-raylib.lib(text.obj) : warning LNK4099: PDB 'raylib.pdb' was not found with 'raylib.lib(text.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\raylib.pdb'; linking object as if no debug info
-raylib.lib(textures.obj) : warning LNK4099: PDB 'raylib.pdb' was not found with 'raylib.lib(textures.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\raylib.pdb'; linking object as if no debug info
-raylib.lib(utils.obj) : warning LNK4099: PDB 'raylib.pdb' was not found with 'raylib.lib(utils.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\raylib.pdb'; linking object as if no debug info
-raylib.lib(context.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(context.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
-raylib.lib(init.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(init.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
-raylib.lib(input.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(input.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
-raylib.lib(monitor.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(monitor.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
-raylib.lib(vulkan.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(vulkan.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
-raylib.lib(window.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(window.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
-raylib.lib(win32_init.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(win32_init.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
-raylib.lib(win32_joystick.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(win32_joystick.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
-raylib.lib(win32_monitor.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(win32_monitor.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
-raylib.lib(win32_time.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(win32_time.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
-raylib.lib(win32_thread.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(win32_thread.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
-raylib.lib(win32_window.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(win32_window.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
-raylib.lib(wgl_context.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(wgl_context.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
-raylib.lib(egl_context.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(egl_context.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
-raylib.lib(osmesa_context.obj) : warning LNK4099: PDB 'glfw_objlib.pdb' was not found with 'raylib.lib(osmesa_context.obj)' or at 'C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\glfw_objlib.pdb'; linking object as if no debug info
-  Factory_Pattern.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\Object_Pooling.exe
+﻿  main.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(21): note: see reference to class template instantiation 'tObjectPool<T>' being compiled
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(7): warning C4183: 'ObjectPool': missing return type; assumed to be a member function returning 'int'
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(8): warning C4183: 'ObjectPool': missing return type; assumed to be a member function returning 'int'
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(10): error C2523: 'tObjectPool<T>::~ObjectPool': destructor tag mismatch
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(20): warning C4183: 'Initialize': missing return type; assumed to be a member function returning 'int'
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(25): warning C4346: 'ObjectPool': dependent name is not a type
+  c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(25): note: prefix with 'typename' to indicate a type
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(25): error C2061: syntax error: identifier 'ObjectPool'
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(25): error C2143: syntax error: missing ';' before '{'
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(25): error C2447: '{': missing function header (old-style formal list?)
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(29): warning C4346: 'ObjectPool': dependent name is not a type
+  c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(29): note: prefix with 'typename' to indicate a type
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(29): error C2061: syntax error: identifier 'ObjectPool'
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(29): error C2143: syntax error: missing ';' before '{'
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(29): error C2447: '{': missing function header (old-style formal list?)
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(34): warning C4346: 'Initialize': dependent name is not a type
+  c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(34): note: prefix with 'typename' to indicate a type
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(34): error C2061: syntax error: identifier 'Initialize'
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(34): error C2143: syntax error: missing ';' before '{'
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(34): error C2447: '{': missing function header (old-style formal list?)
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): error C2523: 'tObjectPool::~ObjectPool': destructor tag mismatch
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): warning C4346: 'ObjectPool': dependent name is not a type
+  c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): note: prefix with 'typename' to indicate a type
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): error C2061: syntax error: identifier 'ObjectPool'
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): error C2143: syntax error: missing ';' before '{'
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): error C2447: '{': missing function header (old-style formal list?)
+c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\main.cpp(49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data

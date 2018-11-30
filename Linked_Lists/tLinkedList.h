@@ -77,6 +77,23 @@ inline const T & tForwardList<T>::front() const
 template<typename T>
 inline void tForwardList<T>::remove(const T & val)
 {
+	while (head->data == val) {
+		Node *temp = head;
+		head = temp->next;
+		delete temp;
+	}
+
+	Node *hold = head;
+	while (hold->next != nullptr) {
+		if (hold->next->data == val) {
+			Node *temp = hold->next;
+			hold->next = temp->next;
+			delete temp;
+		}
+		else {
+			hold = hold->next;
+		}
+	}
 }
 
 template<typename T>

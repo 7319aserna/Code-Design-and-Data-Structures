@@ -13,12 +13,12 @@ int GameState::getState() {
 		break;
 	case 1: // Start
 		break;
-	case 2: // Options
+	case 2: // Best Lap Level
+		break;
+	case 3: // Game Exit
 		break;
 	/*case 4: // Gameplay In Progress
 		break;*/
-	case 3: // Game Exit
-		break;
 	}
 	return state;
 }

@@ -23,6 +23,8 @@ raceTrack::raceTrack()
 	lapCounter = 1;
 	// Time is set to zero
 	lapTimer = 0;
+	// The time after the race ends is set to zero
+	raceEndTimer = 0.0f;
 }
 
 raceTrack::~raceTrack()
@@ -30,43 +32,43 @@ raceTrack::~raceTrack()
 	UnloadTexture(texture);
 }
 
-void raceTrack::update(float deltaTime, player& player)
+void raceTrack::update(float deltaTime, player& player, GameState& gamestate)
 {
-	lapTimer++;
+	lapTimer += deltaTime;
 	// Here is where the Queue is located
 	// When we push, it will spawn in a checkpoint, and as soon as the player crosses that checkpoint, it would move to the next one.
 	std::cout << "Queue Size: " << queueObject.size() << std::endl;
 
 	// 1st Checkpoint
-	if (queueObject.size() == 5) {
+	if (queueObject.front() == 1) {
 		if (player.playerRectangleObject.x >= 404 && player.playerRectangleObject.y < 190 && player.playerRectangleObject.y > 180) {
 			queueObject.pop();
 		}
 	}
 
 	// 2nd Checkpoint
-	if (queueObject.size() == 4) {
+	if (queueObject.front() == 2) {
 		if (player.playerRectangleObject.x <= 154 && player.playerRectangleObject.y < 190 && player.playerRectangleObject.y > 180) {
 			queueObject.pop();
 		}
 	}
 
 	// 3rd Checkpoint
-	if (queueObject.size() == 3) {
+	if (queueObject.front() == 3) {
 		if (player.playerRectangleObject.x <= 154 && player.playerRectangleObject.y < 700 && player.playerRectangleObject.y > 690) {
 			queueObject.pop();
 		}
 	}
 
 	// 4th Checkpoint
-	if (queueObject.size() == 2) {
+	if (queueObject.front() == 4) {
 		if (player.playerRectangleObject.x >= 404 && player.playerRectangleObject.y < 700 && player.playerRectangleObject.y > 690) {
 			queueObject.pop();
 		}
 	}
 
 	// Finish Line
-	if (queueObject.size() == 1) {
+	if (queueObject.front() == 5) {
 		if (player.playerRectangleObject.x >= 404 && player.playerRectangleObject.y < 460 && player.playerRectangleObject.y > 440) {
 			queueObject.pop();
 		}
@@ -89,11 +91,15 @@ void raceTrack::update(float deltaTime, player& player)
 		if (lapCounter == 4) {
 			float floatArr[3] = { firstLap, secondLap, thirdLap };
 			bL_Object.mergeSort(floatArr, 0, 2);
+			
 			for (int i = 0; i < 1; i++) {
 				fastestLap = floatArr[i];
+				std::cout << (float)fastestLap << std::endl;
 			}
+
+			gamestate.setState(2);
 		}
-		else if (lapCounter != 4) {
+		else if (lapCounter < 4) {
 			queueObject.push(1);
 			queueObject.push(2);
 			queueObject.push(3);
@@ -110,24 +116,22 @@ void raceTrack::draw()
 	DrawText("/3", 700, 0, 45, BLACK);
 
 	if (lapCounter == 1) {
-		DrawText(FormatText("Lap 1: %.02f", (float)lapTimer / 60), 575, 50, 45, BLACK);
+		DrawText(FormatText("Lap 1: %.02f", (float)lapTimer), 575, 50, 45, BLACK);
 	}
 	if (lapCounter == 2) {
-		DrawText(FormatText("Lap 1: %.02f", (float)firstLap / 60), 575, 50, 45, BLACK);
-		DrawText(FormatText("Lap 2: %.02f", (float)lapTimer / 60), 575, 100, 45, BLACK);
+		DrawText(FormatText("Lap 1: %.02f", (float)firstLap), 575, 50, 45, BLACK);
+		DrawText(FormatText("Lap 2: %.02f", (float)lapTimer), 575, 100, 45, BLACK);
 	}
 	if (lapCounter == 3) {
-		DrawText(FormatText("Lap 1: %.02f", (float)firstLap / 60), 575, 50, 45, BLACK);
-		DrawText(FormatText("Lap 2: %.02f", (float)secondLap / 60), 575, 100, 45, BLACK);
-		DrawText(FormatText("Lap 3: %.02f", (float)lapTimer / 60), 575, 150, 45, BLACK);
+		DrawText(FormatText("Lap 1: %.02f", (float)firstLap), 575, 50, 45, BLACK);
+		DrawText(FormatText("Lap 2: %.02f", (float)secondLap), 575, 100, 45, BLACK);
+		DrawText(FormatText("Lap 3: %.02f", (float)lapTimer), 575, 150, 45, BLACK);
 	}
 	if (lapCounter == 4) {
-		DrawText("Best Lap: ", 575, 200, 45, BLACK);
-		DrawText(FormatText("%.03f", fastestLap), 575, 225, 45, BLACK);
 
-		DrawText(FormatText("Lap 1: %.02f", (float)firstLap / 60), 575, 50, 45, BLACK);
-		DrawText(FormatText("Lap 2: %.02f", (float)secondLap / 60), 575, 100, 45, BLACK);
-		DrawText(FormatText("Lap 3: %.02f", (float)thirdLap / 60), 575, 150, 45, BLACK);
+		DrawText(FormatText("Lap 1: %.02f", (float)firstLap), 575, 100, 45, BLACK);
+		DrawText(FormatText("Lap 2: %.02f", (float)secondLap), 575, 150, 45, BLACK);
+		DrawText(FormatText("Lap 3: %.02f", (float)thirdLap), 575, 200, 45, BLACK);
 	}
 
 	if (queueObject.size() == 5) {

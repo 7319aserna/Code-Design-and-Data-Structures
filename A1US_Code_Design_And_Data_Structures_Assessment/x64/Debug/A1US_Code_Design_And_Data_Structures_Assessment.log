@@ -1,55 +1,8 @@
-﻿  player.cpp
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(9): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(42): warning C4244: 'argument': conversion from 'int' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=float
-          ]
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(51): warning C4244: 'argument': conversion from 'int' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=float
-          ]
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(52): warning C4244: 'argument': conversion from 'int' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=float
-          ]
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(68): warning C4244: 'argument': conversion from 'int' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=float
-          ]
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(69): warning C4244: 'argument': conversion from 'int' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=float
-          ]
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(85): warning C4244: 'argument': conversion from 'int' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=float
-          ]
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(86): warning C4244: 'argument': conversion from 'int' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=float
-          ]
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(102): warning C4244: 'argument': conversion from 'int' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=float
-          ]
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(103): warning C4244: 'argument': conversion from 'int' to 'const _Ty', possible loss of data
-          with
-          [
-              _Ty=float
-          ]
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(156): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(170): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(184): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(198): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(212): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
-c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\player.cpp(218): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
-  A1US_Code_Design_And_Data_Structures_Assessment.vcxproj -> C:\Users\7319a\source\repos\Code-Design-and-Data-Structures\x64\Debug\A1US_Code_Design_And_Data_Structures_Assessment.exe
+﻿  mainMenu.cpp
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\mainmenu.cpp(44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\mainmenu.cpp(46): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\mainmenu.cpp(48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\s189074\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_assessment\mainmenu.cpp(50): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  raceTrack.cpp
+  Generating Code...
+  A1US_Code_Design_And_Data_Structures_Assessment.vcxproj -> C:\Users\s189074\source\repos\Code-Design-and-Data-Structures\x64\Debug\A1US_Code_Design_And_Data_Structures_Assessment.exe

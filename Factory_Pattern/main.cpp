@@ -22,7 +22,10 @@ int main() {
 
 	InitWindow(screenWidth, screenHeight, "Factory Pattern");
 	SetTargetFPS(60);
-	
+
+	// ***---Object Pool---*** //
+
+	// ***---Prototype---*** //
 	FallingFactory::init();
 	SimpleSprite simpleSpriteObject = *FallingFactory::getRandom();
 
@@ -30,9 +33,6 @@ int main() {
 
 	std::vector<SimpleSprite *> spritesOrSomething;
 	spritesOrSomething.push_back(FallingFactory::getRandom());
-	/*spritesOrSomething.push_back(FallingFactory::getRandom());
-	spritesOrSomething.push_back(FallingFactory::getRandom());
-	spritesOrSomething.push_back(FallingFactory::getRandom());*/
 
 	while (!WindowShouldClose()) {
 

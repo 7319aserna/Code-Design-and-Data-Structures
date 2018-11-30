@@ -41,6 +41,10 @@ void player::update(float deltaTime)
 	if (IsKeyDown(KEY_W) | IsKeyDown(KEY_A) | IsKeyDown(KEY_S) | IsKeyDown(KEY_D)) {
 		bottomlessInt.push_back(speed);
 
+		if (IsKeyDown(KEY_L)) {
+			speed = 500;
+		}
+
 		// If speed is at 50
 		if (bottomlessInt.size() == 50) {
 			isSpeedCapped = true;
@@ -216,6 +220,10 @@ void player::update(float deltaTime)
 			playerRectangleObject.y = spawnPosition.y;
 		}
 		if (playerRectangleObject.x < 0 | playerRectangleObject.x > 525 | playerRectangleObject.y < 0 | playerRectangleObject.y > 950) {
+			position.x = 445;
+			playerRectangleObject.x = 445;
+			position.y = 445;
+			playerRectangleObject.y = 445;
 			spawnQueueObject.pop();
 		}
 	}
@@ -231,16 +239,54 @@ void player::update(float deltaTime)
 
 void player::draw() {
 	//DrawRectangle(playerRectangleObject.x, playerRectangleObject.y, playerRectangleObject.width, playerRectangleObject.height, SKYBLUE);
+	
+	// If no Keys are Pressed 
+	if (IsKeyUp(KEY_W) && IsKeyUp(KEY_A) && IsKeyUp(KEY_S) && IsKeyUp(KEY_D)) {
+		DrawTexturePro(texture, Rectangle{ 0,0,(float)(texture.width), (float)(texture.height) }, Rectangle{ playerRectangleObject.x + playerRectangleObject.width / 2, playerRectangleObject.y + playerRectangleObject.height / 2,(float)(texture.width) * 0.75f, (float)(texture.height) * 0.75f }, { (float)(texture.width) / 2, (float)(texture.height) / 2 }, 0.0f, WHITE);
+		//DrawTextureEx(texture, { playerRectangleObject.x, playerRectangleObject.y }, 0.0f, 0.75f, WHITE);
+	}
+
+	// If only the W Key is Pressed 
 	if (IsKeyDown(KEY_W) && IsKeyUp(KEY_A) && IsKeyUp(KEY_S) && IsKeyUp(KEY_D)) {
-		DrawTextureEx(texture, { playerRectangleObject.x, playerRectangleObject.y }, 0.0f, 0.75f, WHITE);
+		DrawTexturePro(texture, Rectangle{0,0,(float)(texture.width), (float)(texture.height) }, Rectangle{ playerRectangleObject.x + playerRectangleObject.width / 2, playerRectangleObject.y + playerRectangleObject.height / 2,(float)(texture.width) * 0.75f, (float)(texture.height) * 0.75f }, { (float)(texture.width) / 2, (float)(texture.height) / 2 }, 0.0f, WHITE);
+		//DrawTextureEx(texture, { playerRectangleObject.x, playerRectangleObject.y }, 0.0f, 0.75f, WHITE);
 	}
+	// If only the W and A Key is Pressed 
+	if (IsKeyDown(KEY_W) && IsKeyDown(KEY_A) && IsKeyUp(KEY_S) && IsKeyUp(KEY_D)) {
+		DrawTexturePro(texture, Rectangle{ 0,0,(float)(texture.width), (float)(texture.height) }, Rectangle{ playerRectangleObject.x + playerRectangleObject.width / 2, playerRectangleObject.y + playerRectangleObject.height / 2,(float)(texture.width) * 0.75f, (float)(texture.height) * 0.75f }, { (float)(texture.width) / 2, (float)(texture.height) / 2 }, -45.0f, WHITE);
+		//DrawTextureEx(texture, { playerRectangleObject.x, playerRectangleObject.y }, -45.0f, 0.75f, WHITE);
+	}
+
+	// If only the A Key is pressed
 	if (IsKeyUp(KEY_W) && IsKeyDown(KEY_A) && IsKeyUp(KEY_S) && IsKeyUp(KEY_D)) {
-		DrawTextureEx(texture, { playerRectangleObject.x, playerRectangleObject.y }, -90.0f, 0.75f, WHITE);
+		DrawTexturePro(texture, Rectangle{ 0,0,(float)(texture.width), (float)(texture.height) }, Rectangle{ playerRectangleObject.x + playerRectangleObject.width / 2, playerRectangleObject.y + playerRectangleObject.height / 2,(float)(texture.width) * 0.75f, (float)(texture.height) * 0.75f }, { (float)(texture.width) / 2, (float)(texture.height) / 2 }, -90.0f, WHITE);
+		//DrawTextureEx(texture, { playerRectangleObject.x, playerRectangleObject.y }, -90.0f, 0.75f, WHITE);
 	}
+	// If only the A and S Key is pressed
+	if (IsKeyUp(KEY_W) && IsKeyDown(KEY_A) && IsKeyDown(KEY_S) && IsKeyUp(KEY_D)) {
+		DrawTexturePro(texture, Rectangle{ 0,0,(float)(texture.width), (float)(texture.height) }, Rectangle{ playerRectangleObject.x + playerRectangleObject.width / 2, playerRectangleObject.y + playerRectangleObject.height / 2,(float)(texture.width) * 0.75f, (float)(texture.height) * 0.75f }, { (float)(texture.width) / 2, (float)(texture.height) / 2 }, -135.0f, WHITE);
+		//DrawTextureEx(texture, { playerRectangleObject.x, playerRectangleObject.y }, -135.0f, 0.75f, WHITE);
+	}
+
+	// If only the S Key is Pressed 
 	if (IsKeyUp(KEY_W) && IsKeyUp(KEY_A) && IsKeyDown(KEY_S) && IsKeyUp(KEY_D)) {
-		DrawTextureEx(texture, { playerRectangleObject.x, playerRectangleObject.y }, -180.0f, 0.75f, WHITE);
+		DrawTexturePro(texture, Rectangle{ 0,0,(float)(texture.width), (float)(texture.height) }, Rectangle{ playerRectangleObject.x + playerRectangleObject.width / 2, playerRectangleObject.y + playerRectangleObject.height / 2,(float)(texture.width) * 0.75f, (float)(texture.height) * 0.75f }, { (float)(texture.width) / 2, (float)(texture.height) / 2 }, -180.0f, WHITE);
+		//DrawTextureEx(texture, { playerRectangleObject.x, playerRectangleObject.y }, -180.0f, 0.75f, WHITE);
 	}
+	// If only the S and D Key is Pressed 
+	if (IsKeyUp(KEY_W) && IsKeyUp(KEY_A) && IsKeyDown(KEY_S) && IsKeyDown(KEY_D)) {
+		DrawTexturePro(texture, Rectangle{ 0,0,(float)(texture.width), (float)(texture.height) }, Rectangle{ playerRectangleObject.x + playerRectangleObject.width / 2, playerRectangleObject.y + playerRectangleObject.height / 2,(float)(texture.width) * 0.75f, (float)(texture.height) * 0.75f }, { (float)(texture.width) / 2, (float)(texture.height) / 2 }, -225.0f, WHITE);
+		//DrawTextureEx(texture, { playerRectangleObject.x, playerRectangleObject.y }, -225.0f, 0.75f, WHITE);
+	}
+
+	// If only the D Key is Pressed 
 	if (IsKeyUp(KEY_W) && IsKeyUp(KEY_A) && IsKeyUp(KEY_S) && IsKeyDown(KEY_D)) {
-		DrawTextureEx(texture, { playerRectangleObject.x, playerRectangleObject.y }, -270.0f, 0.75f, WHITE);
+		DrawTexturePro(texture, Rectangle{ 0,0,(float)(texture.width), (float)(texture.height) }, Rectangle{ playerRectangleObject.x + playerRectangleObject.width / 2, playerRectangleObject.y + playerRectangleObject.height / 2,(float)(texture.width) * 0.75f, (float)(texture.height) * 0.75f }, { (float)(texture.width) / 2, (float)(texture.height) / 2 }, -270.0f, WHITE);
+		//DrawTextureEx(texture, { playerRectangleObject.x, playerRectangleObject.y }, -270.0f, 0.75f, WHITE);
+	}
+	// If only the D and W Key is Pressed 
+	if (IsKeyDown(KEY_W) && IsKeyUp(KEY_A) && IsKeyUp(KEY_S) && IsKeyDown(KEY_D)) {
+		DrawTexturePro(texture, Rectangle{ 0,0,(float)(texture.width), (float)(texture.height) }, Rectangle{ playerRectangleObject.x + playerRectangleObject.width / 2, playerRectangleObject.y + playerRectangleObject.height / 2,(float)(texture.width) * 0.75f, (float)(texture.height) * 0.75f }, { (float)(texture.width) / 2, (float)(texture.height) / 2 }, -315.0f, WHITE);
+		//DrawTextureEx(texture, { playerRectangleObject.x, playerRectangleObject.y }, -315.0f, 0.75f, WHITE);
 	}
 }

@@ -7,6 +7,9 @@ public:
 	mainMenu();
 	~mainMenu();
 
+	// Booleans
+	bool levelBeaten;
+
 	// Buttons
 	Texture2D buttonTexture;
 

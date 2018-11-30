@@ -3,18 +3,18 @@
 
 int main() {
 	tForwardList<int> tFLObject;
+	tFLObject.push_front(22);
 	tFLObject.push_front(10);
 	tFLObject.push_front(22);
 	tFLObject.push_front(42);
 	tFLObject.push_front(33);
+	tFLObject.push_front(22);
 	tFLObject.push_front(56);
 	
 	tFLObject.display();
-	
-	tFLObject.pop_front();
+
+	tFLObject.remove(22);
 
 	tFLObject.display();
-
-	std::cout << tFLObject.front() << std::endl;
 	return 0;
 }
