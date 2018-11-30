@@ -1,31 +1,31 @@
 ﻿  main.cpp
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-  c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(21): note: see reference to class template instantiation 'tObjectPool<T>' being compiled
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(7): warning C4183: 'ObjectPool': missing return type; assumed to be a member function returning 'int'
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(8): warning C4183: 'ObjectPool': missing return type; assumed to be a member function returning 'int'
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(10): error C2523: 'tObjectPool<T>::~ObjectPool': destructor tag mismatch
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(20): warning C4183: 'Initialize': missing return type; assumed to be a member function returning 'int'
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(25): warning C4346: 'ObjectPool': dependent name is not a type
-  c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(25): note: prefix with 'typename' to indicate a type
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(25): error C2061: syntax error: identifier 'ObjectPool'
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(25): error C2143: syntax error: missing ';' before '{'
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(25): error C2447: '{': missing function header (old-style formal list?)
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(29): warning C4346: 'ObjectPool': dependent name is not a type
-  c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(29): note: prefix with 'typename' to indicate a type
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(29): error C2061: syntax error: identifier 'ObjectPool'
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(29): error C2143: syntax error: missing ';' before '{'
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(29): error C2447: '{': missing function header (old-style formal list?)
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(34): warning C4346: 'Initialize': dependent name is not a type
-  c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(34): note: prefix with 'typename' to indicate a type
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(34): error C2061: syntax error: identifier 'Initialize'
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(34): error C2143: syntax error: missing ';' before '{'
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(34): error C2447: '{': missing function header (old-style formal list?)
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): error C2523: 'tObjectPool::~ObjectPool': destructor tag mismatch
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): warning C4346: 'ObjectPool': dependent name is not a type
-  c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): note: prefix with 'typename' to indicate a type
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): error C2061: syntax error: identifier 'ObjectPool'
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): error C2143: syntax error: missing ';' before '{'
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): error C2447: '{': missing function header (old-style formal list?)
-c:\users\s189074\source\repos\code-design-and-data-structures\factory_pattern\main.cpp(49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(21): note: see reference to class template instantiation 'tObjectPool<T>' being compiled
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(7): warning C4183: 'ObjectPool': missing return type; assumed to be a member function returning 'int'
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(8): warning C4183: 'ObjectPool': missing return type; assumed to be a member function returning 'int'
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(10): error C2523: 'tObjectPool<T>::~ObjectPool': destructor tag mismatch
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(20): warning C4183: 'Initialize': missing return type; assumed to be a member function returning 'int'
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(25): warning C4346: 'ObjectPool': dependent name is not a type
+  c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(25): note: prefix with 'typename' to indicate a type
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(25): error C2061: syntax error: identifier 'ObjectPool'
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(25): error C2143: syntax error: missing ';' before '{'
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(25): error C2447: '{': missing function header (old-style formal list?)
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(29): warning C4346: 'ObjectPool': dependent name is not a type
+  c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(29): note: prefix with 'typename' to indicate a type
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(29): error C2061: syntax error: identifier 'ObjectPool'
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(29): error C2143: syntax error: missing ';' before '{'
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(29): error C2447: '{': missing function header (old-style formal list?)
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(34): warning C4346: 'Initialize': dependent name is not a type
+  c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(34): note: prefix with 'typename' to indicate a type
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(34): error C2061: syntax error: identifier 'Initialize'
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(34): error C2143: syntax error: missing ';' before '{'
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(34): error C2447: '{': missing function header (old-style formal list?)
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): error C2523: 'tObjectPool<T>::~ObjectPool': destructor tag mismatch
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): warning C4346: 'ObjectPool': dependent name is not a type
+  c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): note: prefix with 'typename' to indicate a type
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): error C2061: syntax error: identifier 'ObjectPool'
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): error C2143: syntax error: missing ';' before '{'
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\tobjectpool.h(40): error C2447: '{': missing function header (old-style formal list?)
+c:\users\7319a\source\repos\code-design-and-data-structures\factory_pattern\main.cpp(49): warning C4244: '=': conversion from 'int' to 'float', possible loss of data

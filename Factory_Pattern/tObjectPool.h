@@ -3,7 +3,6 @@
 template<typename T>
 class tObjectPool
 {
-public:
 	ObjectPool();                       // default initializes the object pool
 	ObjectPool(size_t initialCapacity); // initializes the pool to have a set number of objects
 
@@ -17,10 +16,10 @@ public:
 
 	size_t capacity();                  // returns the total number of objects that this pool can provide
 
+public:
 	Initialize(size_t);
 };
 
-// Make a template type that will set up the capacity for the pool
 template<typename T>
 inline tObjectPool<T>::ObjectPool() {
 }

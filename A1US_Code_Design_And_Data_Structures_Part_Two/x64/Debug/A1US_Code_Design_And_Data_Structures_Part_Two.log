@@ -1,0 +1,11 @@
+﻿  main.cpp
+c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\main.cpp(65): warning C4553: '==': result of expression not used; did you intend '='?
+c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\main.cpp(101): warning C4244: 'argument': conversion from 'int' to 'const T', possible loss of data
+          with
+          [
+              T=float
+          ]
+c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\main.cpp(109): warning C4553: '==': result of expression not used; did you intend '='?
+c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\main.cpp(125): warning C4553: '==': result of expression not used; did you intend '='?
+c:\users\7319a\source\repos\code-design-and-data-structures\a1us_code_design_and_data_structures_part_two\main.cpp(200): warning C4553: '==': result of expression not used; did you intend '='?
+  A1US_Code_Design_And_Data_Structures_Part_Two.vcxproj -> C:\Users\7319a\source\repos\Code-Design-and-Data-Structures\x64\Debug\A1US_Code_Design_And_Data_Structures_Part_Two.exe

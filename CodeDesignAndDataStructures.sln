@@ -19,7 +19,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Raylib_Practice", "Raylib_P
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dynamic_Arrays", "Dynamic_Arrays\Dynamic_Arrays.vcxproj", "{FE02C6C4-E097-422D-9629-B24C1DE70035}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "A1US_Code_Design_And_Data_Structures_Assessment", "A1US_Code_Design_And_Data_Structures_Assessment\A1US_Code_Design_And_Data_Structures_Assessment.vcxproj", "{33ABFD27-253D-4B52-84BE-C08D8E1DE8D4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "A1US_Code_Design_And_Data_Structures_Part_One", "A1US_Code_Design_And_Data_Structures_Assessment\A1US_Code_Design_And_Data_Structures_Assessment.vcxproj", "{33ABFD27-253D-4B52-84BE-C08D8E1DE8D4}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Linked_Lists", "Linked_Lists\Linked_Lists.vcxproj", "{0B2E0C89-0EAA-45B1-86DE-F6DBF2FFFDD9}"
 EndProject
@@ -29,7 +29,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Merge_Sort", "Merge_Sort\Me
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Singletons_and_Enums", "Singletons_and_Enums\Singletons_and_Enums.vcxproj", "{0353D030-28B7-488D-BE8C-DC2E4373CA2E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Factory_Pattern", "Factory_Pattern\Factory_Pattern.vcxproj", "{9B803DFA-744A-422A-ADD6-5BBDD12CBB6A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Object_Pooling", "Factory_Pattern\Factory_Pattern.vcxproj", "{9B803DFA-744A-422A-ADD6-5BBDD12CBB6A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "A1US_Code_Design_And_Data_Structures_Part_Two", "A1US_Code_Design_And_Data_Structures_Part_Two\A1US_Code_Design_And_Data_Structures_Part_Two.vcxproj", "{89ACD205-1A41-4866-BD7B-B8F6F0373979}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -151,6 +153,14 @@ Global
 		{9B803DFA-744A-422A-ADD6-5BBDD12CBB6A}.Release|x64.Build.0 = Release|x64
 		{9B803DFA-744A-422A-ADD6-5BBDD12CBB6A}.Release|x86.ActiveCfg = Release|Win32
 		{9B803DFA-744A-422A-ADD6-5BBDD12CBB6A}.Release|x86.Build.0 = Release|Win32
+		{89ACD205-1A41-4866-BD7B-B8F6F0373979}.Debug|x64.ActiveCfg = Debug|x64
+		{89ACD205-1A41-4866-BD7B-B8F6F0373979}.Debug|x64.Build.0 = Debug|x64
+		{89ACD205-1A41-4866-BD7B-B8F6F0373979}.Debug|x86.ActiveCfg = Debug|Win32
+		{89ACD205-1A41-4866-BD7B-B8F6F0373979}.Debug|x86.Build.0 = Debug|Win32
+		{89ACD205-1A41-4866-BD7B-B8F6F0373979}.Release|x64.ActiveCfg = Release|x64
+		{89ACD205-1A41-4866-BD7B-B8F6F0373979}.Release|x64.Build.0 = Release|x64
+		{89ACD205-1A41-4866-BD7B-B8F6F0373979}.Release|x86.ActiveCfg = Release|Win32
+		{89ACD205-1A41-4866-BD7B-B8F6F0373979}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

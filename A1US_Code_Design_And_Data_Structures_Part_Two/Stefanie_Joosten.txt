@@ -1,0 +1,13 @@
+Name Level Score
+---- ----- -----
+Bobbo, 1, 23
+Larry, 2, 55
+Jimbo, 3, 51
+Curly, 7, 99
+Mo, 8, 84
+Dino, 9, 5
+Khoshekh, 185, 2012
+Carlos, 186, 2012
+Marty Mcfly, 200, 1955
+Einstein, 210, 1855
+Emmett Brown, 250, 2075
