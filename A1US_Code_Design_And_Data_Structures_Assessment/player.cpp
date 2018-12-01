@@ -1,5 +1,6 @@
 #include <iostream>
 #include "player.h"
+#include "raceTrack.h"
 #include "raylib.h"
 #include "tQueue.h"
 #include <vector>
@@ -32,21 +33,26 @@ player::~player()
 {
 }
 
-void player::update(float deltaTime)
+void player::update(float deltaTime, raceTrack& raceTrack)
 {
+	  // *********************************************************** //
+	 // *********--------- Speed (Dynamic Array) ---------********* //
+	// *********************************************************** //
+
 	bool isSpeedCapped = false;
+
+	if (raceTrack.israceEnded == true) {
+		bottomlessInt.resize(0);
+		speed = 0;
+	}
 
 	// For my speed variable, when the player starts to move, it pushes back the speed and makes it into a dynamic array.
 	// The capacity will increase to the max speed, and as soon as the player's speed is at zero, then there would be nothing in the array.
 	if (IsKeyDown(KEY_W) | IsKeyDown(KEY_A) | IsKeyDown(KEY_S) | IsKeyDown(KEY_D)) {
 		bottomlessInt.push_back(speed);
 
-		if (IsKeyDown(KEY_L)) {
-			speed = 500;
-		}
-
-		// If speed is at 50
-		if (bottomlessInt.size() == 50) {
+		// If speed is at 75
+		if (bottomlessInt.size() == 75) {
 			isSpeedCapped = true;
 			DrawText("Press E to shift gear", 537, 900, 40, BLACK);
 
@@ -57,24 +63,7 @@ void player::update(float deltaTime)
 			}
 
 			else if (isSpeedCapped == true) {
-				speed = 49;
-				bottomlessInt.pop_back();
-			}
-		}
-
-		// If speed is at 100
-		if (bottomlessInt.size() == 100) {
-			isSpeedCapped = true;
-			DrawText("Press E to shift gear", 537, 900, 40, BLACK);
-
-			if (IsKeyDown(KEY_W) | IsKeyDown(KEY_A) | IsKeyDown(KEY_S) | IsKeyDown(KEY_D) && IsKeyPressed(KEY_E)) {
-				isSpeedCapped = false;
-				bottomlessInt.push_back(speed);
-				bottomlessInt.push_back(speed);
-			}
-
-			else if (isSpeedCapped == true) {
-				speed = 99;
+				speed = 74;
 				bottomlessInt.pop_back();
 			}
 		}
@@ -96,8 +85,8 @@ void player::update(float deltaTime)
 			}
 		}
 
-		// If speed is at 200
-		if (bottomlessInt.size() == 200) {
+		// If speed is at 225
+		if (bottomlessInt.size() == 225) {
 			isSpeedCapped = true;
 			DrawText("Press E to shift gear", 537, 900, 40, BLACK);
 
@@ -108,17 +97,34 @@ void player::update(float deltaTime)
 			}
 
 			else if (isSpeedCapped == true) {
-				speed = 199;
+				speed = 224;
 				bottomlessInt.pop_back();
 			}
 		}
 
-		// If speed is at 250
-		if (bottomlessInt.size() == 250) {
+		// If speed is at 300
+		if (bottomlessInt.size() == 300) {
+			isSpeedCapped = true;
+			DrawText("Press E to shift gear", 537, 900, 40, BLACK);
+
+			if (IsKeyDown(KEY_W) | IsKeyDown(KEY_A) | IsKeyDown(KEY_S) | IsKeyDown(KEY_D) && IsKeyPressed(KEY_E)) {
+				isSpeedCapped = false;
+				bottomlessInt.push_back(speed);
+				bottomlessInt.push_back(speed);
+			}
+
+			else if (isSpeedCapped == true) {
+				speed = 299;
+				bottomlessInt.pop_back();
+			}
+		}
+
+		// If speed is at 375
+		if (bottomlessInt.size() == 375) {
 			isSpeedCapped = true;
 
 			if (isSpeedCapped == true) {
-				speed = 249;
+				speed = 374;
 				bottomlessInt.pop_back();
 			}
 		}
@@ -151,13 +157,22 @@ void player::update(float deltaTime)
 		isSpeedCapped = false;
 	}
 
-	DrawText("Speed: ", 575, 850, 45, BLACK);
-	DrawText(FormatText("%03i", speed), 725, 850, 45, BLACK);
+	// ************************************************************ //
+	// *********--------- Spawn Position Update ---------********* //
+	// ********************************************************** //
 
 	// If the player would leave out of the "Race Track"
 	// Then depending on what checkpoint the player is currently at, then the player would be spawned there.
-	if (spawnQueueObject.size() == 5) {
+	if (spawnQueueObject.front() == 1) {
+		// If player is outside of the track
 		if (playerRectangleObject.x < 0 | playerRectangleObject.x > 525 | playerRectangleObject.y < 0 | playerRectangleObject.y > 950) {
+			position.x = 445;
+			playerRectangleObject.x = 445;
+			position.y = 445;
+			playerRectangleObject.y = 445;
+		}
+		// If player is the inside of track (Grass Tiles)
+		if (playerRectangleObject.x < 400.0f && playerRectangleObject.x > 125.0f && playerRectangleObject.y < 750.0f && playerRectangleObject.y > 125.0f) {
 			position.x = 445;
 			playerRectangleObject.x = 445;
 			position.y = 445;
@@ -170,8 +185,14 @@ void player::update(float deltaTime)
 		}
 	}
 
-	if (spawnQueueObject.size() == 4) {
+	if (spawnQueueObject.front() == 2) {
 		if (playerRectangleObject.x < 0 | playerRectangleObject.x > 525 | playerRectangleObject.y < 0 | playerRectangleObject.y > 950) {
+			position.x = spawnPosition.x;
+			playerRectangleObject.x = spawnPosition.x;
+			position.y = spawnPosition.y;
+			playerRectangleObject.y = spawnPosition.y;
+		}
+		if (playerRectangleObject.x < 400.0f && playerRectangleObject.x > 125.0f && playerRectangleObject.y < 750.0f && playerRectangleObject.y > 125.0f) {
 			position.x = spawnPosition.x;
 			playerRectangleObject.x = spawnPosition.x;
 			position.y = spawnPosition.y;
@@ -184,8 +205,14 @@ void player::update(float deltaTime)
 		}
 	}
 
-	if (spawnQueueObject.size() == 3) {
+	if (spawnQueueObject.front() == 3) {
 		if (playerRectangleObject.x < 0 | playerRectangleObject.x > 525 | playerRectangleObject.y < 0 | playerRectangleObject.y > 950) {
+			position.x = spawnPosition.x;
+			playerRectangleObject.x = spawnPosition.x;
+			position.y = spawnPosition.y;
+			playerRectangleObject.y = spawnPosition.y;
+		}
+		if (playerRectangleObject.x < 400.0f && playerRectangleObject.x > 125.0f && playerRectangleObject.y < 750.0f && playerRectangleObject.y > 125.0f) {
 			position.x = spawnPosition.x;
 			playerRectangleObject.x = spawnPosition.x;
 			position.y = spawnPosition.y;
@@ -198,8 +225,14 @@ void player::update(float deltaTime)
 		}
 	}
 
-	if (spawnQueueObject.size() == 2) {
+	if (spawnQueueObject.front() == 4) {
 		if (playerRectangleObject.x < 0 | playerRectangleObject.x > 525 | playerRectangleObject.y < 0 | playerRectangleObject.y > 950) {
+			position.x = spawnPosition.x;
+			playerRectangleObject.x = spawnPosition.x;
+			position.y = spawnPosition.y;
+			playerRectangleObject.y = spawnPosition.y;
+		}
+		if (playerRectangleObject.x < 400.0f && playerRectangleObject.x > 125.0f && playerRectangleObject.y < 750.0f && playerRectangleObject.y > 125.0f) {
 			position.x = spawnPosition.x;
 			playerRectangleObject.x = spawnPosition.x;
 			position.y = spawnPosition.y;
@@ -212,34 +245,40 @@ void player::update(float deltaTime)
 		}
 	}
 
-	if (spawnQueueObject.size() == 1) {
+	if (spawnQueueObject.front() == 5) {
 		if (playerRectangleObject.x < 0 | playerRectangleObject.x > 525 | playerRectangleObject.y < 0 | playerRectangleObject.y > 950) {
 			position.x = spawnPosition.x;
 			playerRectangleObject.x = spawnPosition.x;
 			position.y = spawnPosition.y;
 			playerRectangleObject.y = spawnPosition.y;
 		}
-		if (playerRectangleObject.x < 0 | playerRectangleObject.x > 525 | playerRectangleObject.y < 0 | playerRectangleObject.y > 950) {
-			position.x = 445;
-			playerRectangleObject.x = 445;
-			position.y = 445;
-			playerRectangleObject.y = 445;
+		if (playerRectangleObject.x < 400.0f && playerRectangleObject.x > 125.0f && playerRectangleObject.y < 750.0f && playerRectangleObject.y > 125.0f) {
+			position.x = spawnPosition.x;
+			playerRectangleObject.x = spawnPosition.x;
+			position.y = spawnPosition.y;
+			playerRectangleObject.y = spawnPosition.y;
+		}
+		if (playerRectangleObject.x >= 404 && playerRectangleObject.y < 500 && playerRectangleObject.y > 340) {
+			spawnPosition.x = 445;
+			spawnPosition.y = 445;
 			spawnQueueObject.pop();
 		}
-	}
-
-	if (spawnQueueObject.size() == 0) {
-		spawnQueueObject.push(1);
-		spawnQueueObject.push(2);
-		spawnQueueObject.push(3);
-		spawnQueueObject.push(4);
-		spawnQueueObject.push(5);
+		if (spawnQueueObject.size() == 0) {
+			spawnQueueObject.push(1);
+			spawnQueueObject.push(2);
+			spawnQueueObject.push(3);
+			spawnQueueObject.push(4);
+			spawnQueueObject.push(5);
+		}
 	}
 }
 
 void player::draw() {
+	DrawText("Speed: ", 575, 850, 45, BLACK);
+	DrawText(FormatText("%03i", speed), 725, 850, 45, BLACK);
+
 	//DrawRectangle(playerRectangleObject.x, playerRectangleObject.y, playerRectangleObject.width, playerRectangleObject.height, SKYBLUE);
-	
+
 	// If no Keys are Pressed 
 	if (IsKeyUp(KEY_W) && IsKeyUp(KEY_A) && IsKeyUp(KEY_S) && IsKeyUp(KEY_D)) {
 		DrawTexturePro(texture, Rectangle{ 0,0,(float)(texture.width), (float)(texture.height) }, Rectangle{ playerRectangleObject.x + playerRectangleObject.width / 2, playerRectangleObject.y + playerRectangleObject.height / 2,(float)(texture.width) * 0.75f, (float)(texture.height) * 0.75f }, { (float)(texture.width) / 2, (float)(texture.height) / 2 }, 0.0f, WHITE);

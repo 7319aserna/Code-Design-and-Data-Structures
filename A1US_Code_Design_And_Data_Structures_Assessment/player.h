@@ -14,6 +14,6 @@ public:
 	Vector2 spawnPosition;
 
 	int speed;
-	void update(float deltaTime);
+	void update(float deltaTime, class raceTrack& raceTrack);
 	void draw();
 };

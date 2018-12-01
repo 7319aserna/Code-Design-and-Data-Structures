@@ -1,5 +1,4 @@
 #include "gameState.h"
-#include "player.h"
 #include "raylib.h"
 #pragma once
 
@@ -33,11 +32,11 @@ public:
 	float fastestLap;
 	
 	// When race has ended, raceEnd will pause the game and then change state to the main menu
-	bool raceEnd;
+	bool israceEnded;
 
 	// When race has ended, raceEndTimer will decrease
 	float raceEndTimer;
 
-	void update(float deltaTime, player& player, GameState& gamestate);
+	void update(float deltaTime, class player& player, GameState& gamestate);
 	void draw();
 };

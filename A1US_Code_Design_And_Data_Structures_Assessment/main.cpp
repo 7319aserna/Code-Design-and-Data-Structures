@@ -30,7 +30,7 @@ int main() {
 		// If the Game State is 1 (Start Game)
 		if (GameState::GetInstance().getState() == 1) {
 			mapCreatorObject.update(GetFrameTime(), screenWidth / 2, screenHeight / 2);
-			playerObject.update(GetFrameTime());
+			playerObject.update(GetFrameTime(), raceTrackObject);
 			raceTrackObject.update(GetFrameTime(), playerObject, GameState::GetInstance());
 
 			BeginDrawing();
